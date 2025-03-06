@@ -46,7 +46,7 @@ export default function Welcome() {
             //     contactNo: '',
             //     indexNo: ''
             // });
-            navigate('/quiz');
+            navigate('/quizApp/quiz');
         }
 
     }

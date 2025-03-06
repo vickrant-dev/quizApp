@@ -13,7 +13,7 @@ export default function Results() {
 
     useEffect(() => {
         if (localStorage.getItem('quizCompleted') !== "true") {
-            navigate('/quiz'); 
+            navigate('/quizApp'); 
         }
     }, [navigate]);
 

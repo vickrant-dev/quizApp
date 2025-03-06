@@ -47,13 +47,8 @@ export default function Quiz() {
         setScore(currentScore);
 
         localStorage.setItem("quizCompleted", "true");
-
-        if(!localStorage.getItem('email-sent')){
-            sendEmail(currentScore);
-            localStorage.setItem("email-sent", true);
-        }
-        
-        navigate('/results', {replace: true});
+        sendEmail(currentScore);
+        navigate('/quizApp/results', {replace: true});
     }
 
     const handleTimeUp = () => {
@@ -68,13 +63,8 @@ export default function Quiz() {
         setScore(currentScore);
 
         localStorage.setItem("quizCompleted", "true");
-
-        if(!localStorage.getItem('email-sent')){
-            sendEmail(currentScore);
-            localStorage.setItem("email-sent", true);
-        }
-
-        navigate('/results', {replace: true});
+        sendEmail(currentScore);
+        navigate('/quizApp/results', {replace: true});
     }
 
     const sendEmail = (currentScore) => {
@@ -96,6 +86,8 @@ export default function Quiz() {
                         console.error("Failed to send email", error);
                     }
                 )
+            
+            localStorage.removeItem('email-sent');
 
         }
         else {

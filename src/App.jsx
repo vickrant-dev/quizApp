@@ -13,8 +13,8 @@ export default function App() {
                 <Router>
                     <Routes>
                         <Route path="/quizApp" element={<Welcome/>}></Route>
-                        <Route path="/quiz" element={<Quiz/>}></Route>
-                        <Route path="/results" element={<Results/>}></Route>
+                        <Route path="/quizApp/quiz" element={<Quiz/>}></Route>
+                        <Route path="/quizApp/results" element={<Results/>}></Route>
                     </Routes>
                 </Router>
             </UserProvider>
