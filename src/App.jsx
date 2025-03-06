@@ -12,7 +12,7 @@ export default function App() {
             <UserProvider>
                 <Router>
                     <Routes>
-                        <Route path="/" element={<Welcome/>}></Route>
+                        <Route path="/quizApp" element={<Welcome/>}></Route>
                         <Route path="/quiz" element={<Quiz/>}></Route>
                         <Route path="/results" element={<Results/>}></Route>
                     </Routes>
