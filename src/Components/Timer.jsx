@@ -36,7 +36,7 @@ export default function Timer({ onTimeUp, isSubmitted }) {
 
     return(
         <div className='timer-container'>
-            <h3>Time left: {formatTime(timeLeft)}</h3>
+            <h3>{formatTime(timeLeft)}</h3>
         </div>
     )
 

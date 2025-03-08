@@ -1,61 +1,80 @@
-import React, { useEffect, useState, useContext } from 'react'
+import React, { useEffect, useState } from 'react'
 import { quizData } from '../utils/quizData'
-import { UserContext } from '../utils/userContext';
 import Timer from './Timer';
 import { useNavigate } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
 import '../App.css'
+
 
 export default function Quiz() {
 
     const navigate = useNavigate();
-    const { userData } = useContext(UserContext); 
 
-    const [question, setQuestion] = useState(quizData);
-    const [userAnswers, setUserAnswers] = useState({});
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [usersAnswers, setUsersAnswers] = useState({});
     const [score, setScore] = useState(0);
 
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const handleAnswerCheck = (e, answer, Qindex) => {
+    const handleAnswerCheck = (e, ans, i) => {
 
-        setUserAnswers({...userAnswers, [Qindex]: answer});
-        
-        const parent = e.target.parentElement;
-        [...parent.children].forEach(child => child.classList.remove("selected"));
-        e.target.classList.add("selected");
+        if(ans.correct){
+            setUsersAnswers({...usersAnswers, [currentQuestion]: i});
+            setScore((prevScore) => prevScore + 1);
+            e.target.classList.add("correct");
+        }
+        else{
+            setUsersAnswers({...usersAnswers, [currentQuestion]: i});
 
-        console.log(userAnswers);
+            e.target.classList.add("wrong");
+            [...e.target.parentElement.children].forEach(el => {
+                if(el.dataset.isCorrect === "true"){
+                    el.classList.add("correct");
+                }
+            })
+        }
+
+        [...e.target.parentElement.children].forEach(el => {
+            el.classList.add("disabled");
+        })
 
     }
 
-    const handleSubmit = () => {
-
-        let currentScore = 0;
-
-        if(Object.keys(userAnswers).length < quizData.length){
-            alert("Please answer all the questions");
-            return;
-        }
-
-        quizData.forEach((quizEl, index) => {
-            if(userAnswers[index] === quizEl.ans){
-                currentScore++;
+    const handleNext = () => {
+        if (currentQuestion !== quizData.length - 1) {
+            if(usersAnswers[currentQuestion] !== undefined){
+                document.querySelectorAll(".a-container li").forEach(li => {
+                    li.classList.remove("correct", "wrong", "disabled");
+                })
+                setCurrentQuestion(currentQuestion + 1); 
             }
-        });
+            else{
+                alert("Please answer the current question before proceeding.")
+            }
+        }
+    }
 
-        setScore(currentScore);
+    const handleBack = () => {
+        if (currentQuestion > 0) {
+            document.querySelectorAll(".a-container li").forEach((li) => {
+              li.classList.remove("correct", "wrong", "disabled")
+            })
+      
+            setCurrentQuestion(currentQuestion - 1)
+        }
+    }
 
+    const handleSubmit = () => {
         localStorage.setItem("quizCompleted", "true");
-        sendEmail(currentScore);
+        localStorage.setItem("quizScore", score);
         navigate('/quizApp/results', {replace: true});
     }
 
     const handleTimeUp = () => {
+    
         let currentScore = 0;
 
         quizData.forEach((quizEl, index) => {
-            if(userAnswers[index] === quizEl.ans){
+            if(usersAnswers[index] === quizEl.ans){
                 currentScore++;
             }
         });
@@ -63,71 +82,67 @@ export default function Quiz() {
         setScore(currentScore);
 
         localStorage.setItem("quizCompleted", "true");
-        sendEmail(currentScore);
-        navigate('/quizApp/results', {replace: true});
-    }
-
-    const sendEmail = (currentScore) => {
-
-        if (userData) {
-            
-            const templateParams = {
-                firstName: userData.firstName + " " + userData.lastName,
-                user_email: userData.email,
-                message: `You scored ${((currentScore/quizData.length * 100).toFixed(2))}% for your driving license quiz`
-            };
-
-            emailjs.send('service_bex1j9e', 'template_rr6vwon', templateParams, 'MTXfNra3PBFPxJVRW')
-                .then(
-                    (response) => {
-                        console.log("Email send successfully", response);
-                    },
-                    (error) => {
-                        console.error("Failed to send email", error);
-                    }
-                )
-            
-            localStorage.removeItem('email-sent');
-
-        }
-        else {
-            console.log("No data found to send email")
-        }
-
-    }
-    
-    useEffect(() => {
-        console.log(score); // debugging
         localStorage.setItem("quizScore", score);
-    }, [score]);
+        navigate('/quizApp/results', {replace: true});
+            
+    }
 
-    return (
-        <>
-            <div className="quiz">
-                <div className="quiz-container">
-                    <div className="heading">
-                        <h2>Quiz</h2>
-                        <Timer onTimeUp={handleTimeUp} isSubmitted={isSubmitted}/>
+    useEffect(() => {
+
+        if(currentQuestion in usersAnswers) {
+            const answerIndex = usersAnswers[currentQuestion];
+            const answerElements = document.querySelectorAll(".a-container li");
+
+            answerElements.forEach((el, elIndex) => {
+
+                el.classList.add("disabled");
+
+                if(elIndex === answerIndex) {
+                    if(el.dataset.isCorrect === "true"){
+                        el.classList.add("correct");
+                    }
+                    else{
+                        el.classList.add("wrong");
+
+                        answerElements.forEach(ansEl => {
+                            if(ansEl.dataset.isCorrect === 'true'){
+                                ansEl.classList.add("correct");
+                            }
+                        })
+
+                    }
+                }
+                
+            })
+        }
+
+    }, [currentQuestion, usersAnswers]);
+
+     return (
+            <>
+                <div className="quiz">
+                    <div className="quiz-container">
+                        <div className="heading">
+                            <h2>Quiz</h2>
+                            <Timer onTimeUp={handleTimeUp} isSubmitted={isSubmitted}/>
+                        </div>
+                        <div className="qa-container">
+                            <div className="q-container">
+                                <p>{currentQuestion + 1}. {quizData[currentQuestion].question}</p>
+                            </div>
+                            <div className="a-container">
+                                {quizData[currentQuestion].answers.map((answer, index) => (
+                                    <li key={index} onClick={(e) => handleAnswerCheck(e, answer, index)} data-is-correct={`${answer.correct}`} >{answer.text}</li>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="back-next">
+                            <button onClick={handleBack} className={ currentQuestion > 0 ? "back-btn active" : "back-btn" } >{currentQuestion > 0 ? "Back" : ""}</button>
+                            <button onClick={currentQuestion === quizData.length - 1 ? handleSubmit : handleNext} className='next-btn' >{currentQuestion === quizData.length - 1 ? "Submit" : "Next"}</button>
+                        </div>
                     </div>
-                    <div className="qa-container">
-                        {question.map((q, i) => (
-                            <>
-                                <div className="q-container">
-                                    <p>{i + 1}. {q.question}</p>
-                                </div>
-                                <div className="a-container">
-                                    <li onClick={(e) => handleAnswerCheck(e,1,i)} >{q.option1}</li>
-                                    <li onClick={(e) => handleAnswerCheck(e,2,i)} >{q.option2}</li>
-                                    <li onClick={(e) => handleAnswerCheck(e,3,i)} >{q.option3}</li>
-                                    <li onClick={(e) => handleAnswerCheck(e,4,i)} >{q.option4}</li>
-                                </div>
-                            </>
-                        ))}
-                    </div>
-                    <button className='submit-btn' onClick={handleSubmit}>Submit</button>
                 </div>
-            </div>
-        </>
-    )
+            </>
+        )
 
 }
