@@ -1,47 +1,58 @@
+import quiz1Image1 from '../assets/road-narrows-ahead.svg'
+import quiz1Image2 from '../assets/slippery-road.svg'
+import quiz1Image3 from '../assets/road-closed.svg'
+import quiz1Image4 from '../assets/single-track-level-crossing.svg'
+import quiz1Image5 from '../assets/single-track-level-crossing.svg'
+
 export const quizData = [
     {
-        question: "Who is the CEO of Tesla?",
+        question: "This road sign depicts",
+        src: quiz1Image1,
         answers: [
-            {text: "Bill Gates", correct: false},
-            {text: "Donald Trump", correct: false},
-            {text: "Elon Musk",  correct: true},
-            {text: "Sam Altman",  correct: false},
+            {text: "Y junction ahead", correct: false},
+            {text: "Road narrows ahead", correct: true},
+            {text: "Dual carriageway ends ahead",  correct: false},
+            {text: "Narrow bridge ahead",  correct: false},
         ]
     },
     {
-        question: "Who invented the Light Bulb?",
+        question: "This road sign depicts",
+        src: quiz1Image2,
         answers: [
-            {text: "Albert Einstein", correct: false},
-            {text: "Max Plank", correct: false},
-            {text: "Thomas Alwa Edison",  correct: true},
-            {text: "Neils Bohr",  correct: false},
+            {text: "Slippery road ahead", correct: true},
+            {text: "Road with bends ahead", correct: false},
+            {text: "Dangerous junction ahead",  correct: false },
+            {text: "Road narrows ahead",  correct: false},
         ]
     },
     {
-        question: "Which planet in our solar system is known as the \"Red Planet\"?",
+        question: "This road sign depicts",
+        src: quiz1Image3,
         answers: [
-            {text: "Mars", correct: true},
-            {text: "Jupiter", correct: false},
-            {text: "Saturn", correct: false},
-            {text: "Pluto", correct: false},
+            {text: "Compulsory roundabout", correct: false},
+            {text: "No Entry", correct: false},
+            {text: "Road closed for buses and lorries", correct: false},
+            {text: "All Vehicles Prohibited", correct: true},
         ]
     },
     {
-        question: "What is the capital city of Japan?",
+        question: "This road sign depicts",
+        src: quiz1Image4,
         answers: [
-            {text: "Colombo", correct: false},
-            {text: "Shenzen", correct: false},
-            {text: "Rio", correct: false},
-            {text: "Tokyo", correct: true},
+            {text: "Road closed ahead", correct: false},
+            {text: "Railway crossing ahead", correct: false},
+            {text: "Single track level crossing", correct: true},
+            {text: "Unprotected railway crossing", correct: false},
         ]
     },
     {
-        question: "Which famous scientist developed the theory of relativity?",
+        question: "The driver who enters the T junction depicted in the picture should",
+        src: quiz1Image5,
         answers: [
-            {text: "Albert Einstein", correct: true},
-            {text: "Neils Bohr", correct: false},
-            {text: "Johannes Kepler", correct: false},
-            {text: "J. Robert Oppenheimer", correct: false},
+            {text: "Drive ahead if there are no vehicles on the main road", correct: false},
+            {text: "Stop immediately", correct: true},
+            {text: "Stop only if turning right", correct: false},
+            {text: "Stop only if turning left", correct: false},
         ]
     }
 ]

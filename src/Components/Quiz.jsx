@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { quizData } from '../utils/quizData'
+import { quizData as quiz1Data } from '../utils/quizData'
+import { quiz2Data } from '../utils/quiz2Data'
+import { quiz3Data } from '../utils/quiz3Data'
+import { quiz4Data } from '../utils/quiz4Data'
 import Timer from './Timer';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import '../App.css'
 
 
@@ -9,9 +12,22 @@ export default function Quiz() {
 
     const navigate = useNavigate();
 
+    const { quizLink } = useParams();
+
+    const quizDataMap = {
+        1: quiz1Data,
+        2: quiz2Data,
+        3: quiz3Data,
+        4: quiz4Data,
+    }
+
+    const quizData = quizDataMap[quizLink] || quiz1Data;
+
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [usersAnswers, setUsersAnswers] = useState({});
     const [score, setScore] = useState(0);
+
+    const [timeTaken, setTimeTaken] = useState(0);
 
     const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -64,27 +80,40 @@ export default function Quiz() {
     }
 
     const handleSubmit = () => {
+        setIsSubmitted(true);
         localStorage.setItem("quizCompleted", "true");
         localStorage.setItem("quizScore", score);
-        navigate('/quizApp/results', {replace: true});
+        navigate(`/quizApp/quizCenter/quiz/${quizLink}/results`, {replace: true});
     }
 
     const handleTimeUp = () => {
     
         let currentScore = 0;
 
+
         quizData.forEach((quizEl, index) => {
-            if(usersAnswers[index] === quizEl.ans){
+            if(usersAnswers[index] === undefined) {
+                return;
+            }
+            else if(usersAnswers[index] === quizEl.ans){
+                console.log(usersAnswers);
                 currentScore++;
             }
         });
 
         setScore(currentScore);
 
+        setIsSubmitted(true);
+
         localStorage.setItem("quizCompleted", "true");
-        localStorage.setItem("quizScore", score);
-        navigate('/quizApp/results', {replace: true});
+        localStorage.setItem("quizScore", currentScore);
+        navigate(`/quizApp/quizCenter/quiz/${quizLink}/results`, {replace: true});
             
+    }
+
+    const handleTimeElapsed = (time) => {
+        setTimeTaken(time);
+        localStorage.setItem("time-taken", time);
     }
 
     useEffect(() => {
@@ -124,9 +153,12 @@ export default function Quiz() {
                     <div className="quiz-container">
                         <div className="heading">
                             <h2>Quiz</h2>
-                            <Timer onTimeUp={handleTimeUp} isSubmitted={isSubmitted}/>
+                            <Timer onTimeUp={handleTimeUp} isSubmitted={isSubmitted} onTimeElapsed={handleTimeElapsed} />
                         </div>
                         <div className="qa-container">
+                            <div className="img-container">
+                                <img src={quizData[currentQuestion].src} width={130} alt="quiz1Image" />
+                            </div>
                             <div className="q-container">
                                 <p>{currentQuestion + 1}. {quizData[currentQuestion].question}</p>
                             </div>

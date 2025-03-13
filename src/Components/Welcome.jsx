@@ -27,7 +27,7 @@ export default function Welcome() {
         }
         else {
             setUserData(form);
-            navigate('/quizApp/quiz');
+            navigate('/quizApp/quizCenter');
         }
 
     }
