@@ -557,7 +557,6 @@ body {
 .prev-button:hover,
 .next-button:hover {
   background-color: var(--background);
-  color: var(--card);
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
