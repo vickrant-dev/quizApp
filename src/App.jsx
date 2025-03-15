@@ -9,7 +9,7 @@ export default function App() {
 
     return (
         <>
-            <HashRouter basename='/quizApp'>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<Welcome/>}></Route>
                     <Route path="/quizCenter" element={<QuizCenter/>}></Route>
