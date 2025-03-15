@@ -9,12 +9,12 @@ export default function App() {
 
     return (
         <>
-            <HashRouter>
+            <HashRouter basename='/quizApp'>
                 <Routes>
-                    <Route path="/quizApp" element={<Welcome/>}></Route>
-                    <Route path="/quizApp/quizCenter" element={<QuizCenter/>}></Route>
-                    <Route path="/quizApp/quizCenter/quiz/:quizLink" element={<Quiz/>}></Route>
-                    <Route path="/quizApp/quizCenter/quiz/:quizLink/results" element={<Results/>}></Route>
+                    <Route path="/" element={<Welcome/>}></Route>
+                    <Route path="/quizCenter" element={<QuizCenter/>}></Route>
+                    <Route path="/quizCenter/quiz/:quizLink" element={<Quiz/>}></Route>
+                    <Route path="/quizCenter/quiz/:quizLink/results" element={<Results/>}></Route>
                 </Routes>
             </HashRouter>
         </>
