@@ -19,28 +19,28 @@ export default function Results() {
     const [quizNumber, setQuizNumber] = useState(quizLink);
 
     const restartQuiz = () => {
-        navigate(`/quizApp/quizCenter/quiz/${quizLink}`, { replace: true });
+        navigate(`/quizCenter/quiz/${quizLink}`, { replace: true });
     };
 
     const handlePrevQuiz = () => {
         const newQuiz = Number.parseInt(quizNumber) - 1;
         setQuizNumber((quizNumber) => quizNumber - 1);
-        navigate(`/quizApp/quizCenter/quiz/${newQuiz}`);
+        navigate(`/quizCenter/quiz/${newQuiz}`);
     };
 
     const handleNextQuiz = () => {
         const newQuiz = Number.parseInt(quizNumber) + 1;
         setQuizNumber((quizNumber) => quizNumber + 1);
-        navigate(`/quizApp/quizCenter/quiz/${newQuiz}`);
+        navigate(`/quizCenter/quiz/${newQuiz}`);
     };
 
     const handleHome = () => {
-        navigate(`/quizApp/quizCenter`);
+        navigate(`/quizCenter`);
     };
 
     useEffect(() => {
         if (localStorage.getItem("quizCompleted") !== "true") {
-            navigate(`quizApp/quizCenter/quiz/${quizLink}`);
+            navigate(`/quizCenter/quiz/${quizLink}`);
         }
     }, [navigate]);
 

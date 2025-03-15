@@ -83,7 +83,7 @@ export default function Quiz() {
         setIsSubmitted(true);
         localStorage.setItem("quizCompleted", "true");
         localStorage.setItem("quizScore", score);
-        navigate(`/quizApp/quizCenter/quiz/${quizLink}/results`, {replace: true});
+        navigate(`/quizCenter/quiz/${quizLink}/results`, {replace: true});
     }
 
     const handleTimeUp = () => {
@@ -107,7 +107,7 @@ export default function Quiz() {
 
         localStorage.setItem("quizCompleted", "true");
         localStorage.setItem("quizScore", currentScore);
-        navigate(`/quizApp/quizCenter/quiz/${quizLink}/results`, {replace: true});
+        navigate(`/quizCenter/quiz/${quizLink}/results`, {replace: true});
             
     }
 

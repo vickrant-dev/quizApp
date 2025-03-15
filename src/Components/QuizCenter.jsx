@@ -4,53 +4,11 @@ import { quizPaper } from '../utils/quizChoice';
 import { Timer, NotebookPen, Brain, ChevronRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom';
 
-// export default function App() {
-
-//     const navigate = useNavigate();
-
-//     const handleClick = (quizLink) => {
-//         navigate(`/quizApp/quizCenter/quiz/${quizLink}`);
-//     }
-
-//     return(
-//         <>
-//             <div className="quiz-choose-container">
-//                 <div className="heading">
-//                     <h2>Choose Your Quiz</h2>
-//                     <p>Select a quiz to test your knowledge</p>
-//                 </div>
-//                 <div className="quiz-cards">
-//                     {quizPaper.map((quiz, quizIndex) => (
-//                         <div className="card">
-//                             <div className="card-heading">
-//                                 <h4>{quiz.title}</h4>
-//                             </div>
-//                             <div className="card-desc">
-//                                 <p>{quiz.description}</p>
-//                             </div>
-//                             <div className="card-details">
-//                                 <div className="time">
-//                                     <Timer size={20} className='icon'/> <span>{quiz.duration} mins</span>
-//                                 </div>
-//                                 <div className="questions">
-//                                     <NotebookPen size={20} className='icon'/><span>{quiz.questions} Questions</span>
-//                                 </div>
-//                             </div>
-//                             <button className="start-btn" onClick={() => handleClick(quiz.link)} >Start Quiz</button>
-//                         </div>
-//                     ))}
-//                 </div>
-//             </div>
-//         </>
-//     )
-
-// }
-
 export default function App() {
     const navigate = useNavigate();
 
     const handleClick = (quizLink) => {
-        navigate(`/quizApp/quizCenter/quiz/${quizLink}`);
+        navigate(`/quizCenter/quiz/${quizLink}`);
     };
 
     return (
