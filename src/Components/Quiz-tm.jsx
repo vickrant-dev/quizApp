@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from 'react'
-import { quizData as quiz1Data } from '../utils/quizData'
-import { quiz2Data } from '../utils/quiz2Data'
-import { quiz3Data } from '../utils/quiz3Data'
-import { quiz4Data } from '../utils/quiz4Data'
+import { quizDatatm as quiz1Datatm } from '../utils/tamil/quizDatatm'
+import { quiz2Datatm } from '../utils/tamil/quiz2Datatm'
+import { quiz3Datatm } from '../utils/tamil/quiz3Datatm'
+import { quiz4Datatm } from '../utils/tamil/quiz4Datatm'
 import Timer from './Timer';
 import { useNavigate, useParams } from 'react-router-dom';
 import '../App.css'
 
 
-export default function Quiz() {
+export default function QuizTm() {
 
     const navigate = useNavigate();
 
     const { quizLink } = useParams();
 
     const quizDataMap = {
-        1: quiz1Data,
-        2: quiz2Data,
-        3: quiz3Data,
-        4: quiz4Data,
+        1: quiz1Datatm,
+        2: quiz2Datatm,
+        3: quiz3Datatm,
+        4: quiz4Datatm,
     }
 
     const quizData = quizDataMap[quizLink] || quiz1Data;
@@ -83,7 +83,7 @@ export default function Quiz() {
         setIsSubmitted(true);
         localStorage.setItem("quizCompleted", "true");
         localStorage.setItem("quizScore", score);
-        navigate(`/quizCenter/quiz/${quizLink}/results`, {replace: true});
+        navigate(`/quizCenter-tm/quiz/tm/${quizLink}/results`, {replace: true});
     }
 
     const handleTimeUp = () => {
@@ -107,7 +107,7 @@ export default function Quiz() {
 
         localStorage.setItem("quizCompleted", "true");
         localStorage.setItem("quizScore", currentScore);
-        navigate(`/quizCenter/quiz/${quizLink}/results`, {replace: true});
+        navigate(`/quizCenter-tm/quiz/tm/${quizLink}/results`, {replace: true});
             
     }
 
@@ -152,7 +152,7 @@ export default function Quiz() {
                 <div className="quiz">
                     <div className="quiz-container">
                         <div className="heading">
-                            <h2>Quiz</h2>
+                            <h2 style={{fontSize:"30px"}} >வினாடி வினா</h2>
                             <Timer onTimeUp={handleTimeUp} isSubmitted={isSubmitted} onTimeElapsed={handleTimeElapsed} />
                         </div>
                         <div className="qa-container">
