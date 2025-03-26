@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import '../Styles/QuizCenter.css'
-import { quizPaper } from '../utils/quizChoice';
+import { quizPapersm as quizPaper } from '../utils/sinhala/quizChoicesm';
 import { Timer, NotebookPen, Brain, ChevronRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom';
 
-export default function App() {
+export default function QuizCenterSm() {
     const navigate = useNavigate();
 
     const handleClick = (quizLink) => {
-        navigate(`/quizCenter/quiz/${quizLink}`);
+        navigate(`/quizCenter-sm/quiz/sm/${quizLink}`);
     };
 
     return (
@@ -18,9 +18,9 @@ export default function App() {
                     <div className="header-icon">
                         <Brain size={32} />
                     </div>
-                    <h1>Choose Your Quiz</h1>
+                    <h1>ඔබේ ප්‍රශ්නාවලිය තෝරන්න</h1>
                     <p>
-                        Select a quiz category to test your knowledge and skills
+                        ඔබේ දැනුම සහ කුසලතා පරීක්ෂා කිරීමට ප්‍රශ්නාවලියක් තෝරන්න.
                     </p>
                 </div>
 
@@ -28,7 +28,7 @@ export default function App() {
                     {quizPaper.map((quiz, quizIndex) => (
                         <div className="quiz-card" key={quizIndex}>
                             <div className="quiz-card-content">
-                                <div className="quiz-card-badge">{`Quiz ${
+                                <div className="quiz-card-badge">{`ප්‍රශ්නාවලිය ${
                                     quizIndex + 1
                                 }`}</div>
                                 <h3 className="quiz-card-title">
@@ -44,14 +44,14 @@ export default function App() {
                                             size={18}
                                             className="detail-icon"
                                         />
-                                        <span>{quiz.duration} mins</span>
+                                        <span>{quiz.duration} මිනිත්තු</span>
                                     </div>
                                     <div className="detail-item">
                                         <NotebookPen
                                             size={18}
                                             className="detail-icon"
                                         />
-                                        <span>{quiz.questions} Questions</span>
+                                        <span>{quiz.questions} ප්රශ්න</span>
                                     </div>
                                 </div>
                             </div>
@@ -60,22 +60,21 @@ export default function App() {
                                 className="quiz-start-button"
                                 onClick={() => handleClick(quiz.link)}
                             >
-                                <span>Start Quiz</span>
+                                <span>ප්‍රශ්නාවලිය ආරම්භ කරන්න</span>
                                 <ChevronRight size={18} />
                             </button>
                         </div>
                     ))}
                 </div>
 
-
                 <div className="language-chooser">
-                    <div className="english checked">
+                    <div onClick={() => navigate('/quizCenter')} className="english">
                         <button>English</button>
                     </div>
                     <div onClick={() => navigate('/quizCenter-tm')} className="tamil">
                         <button>தமிழ்</button>
                     </div>
-                    <div onClick={() => navigate('/quizCenter-sm')}  className="sinhala">
+                    <div className="sinhala checked">
                         <button>සිංහල</button>
                     </div>
                 </div>
