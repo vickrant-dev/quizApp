@@ -17,7 +17,7 @@ export default function App() {
         <>
             <BrowserRouter>
                 <Routes>
-                    {/* <Route path="/" element={<QuizCenter/>}></Route> */}
+                    <Route path="/" element={<QuizCenter/>}></Route>
                     <Route path="/quizCenter" element={<QuizCenter/>}></Route>
                     <Route path="/quizCenter-tm" element={<QuizCenterTm/>}></Route>
                     <Route path="/quizCenter-sm" element={<QuizCenterSm/>}></Route>
