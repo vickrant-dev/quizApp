@@ -8,7 +8,7 @@ export default function QuizCenterTm() {
     const navigate = useNavigate();
 
     const handleClick = (quizLink) => {
-        navigate(`/quizCenter-tm/quiz/${quizLink}`);
+        navigate(`/quizCenter-tm/quiz/tm/${quizLink}`);
     };
 
     return (
@@ -72,10 +72,10 @@ export default function QuizCenterTm() {
                         <button>English</button>
                     </div>
                     <div className="tamil checked">
-                        <button>தமிழ்</button>
+                        <button><strong>தமிழ்</strong></button>
                     </div>
                     <div onClick={() => navigate('/quizCenter-sm')}  className="sinhala">
-                        <button>සිංහල</button>
+                        <button><strong>සිංහල</strong></button>
                     </div>
                 </div>
 

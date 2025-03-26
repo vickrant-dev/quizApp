@@ -72,10 +72,10 @@ export default function QuizCenterSm() {
                         <button>English</button>
                     </div>
                     <div onClick={() => navigate('/quizCenter-tm')} className="tamil">
-                        <button>தமிழ்</button>
+                        <button><strong>தமிழ்</strong></button>
                     </div>
                     <div className="sinhala checked">
-                        <button>සිංහල</button>
+                        <button><strong>සිංහල</strong></button>
                     </div>
                 </div>
 

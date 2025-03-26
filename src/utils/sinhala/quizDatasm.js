@@ -39,403 +39,403 @@ import quiz1Image40 from '../../assets/40.png'
 
 export const quizDatasm = [
     {
-        question: "This road sign indicates:",
-        src: quiz1Image1,
-        answers: [
-            { text: "Dual carriageway begins ahead", correct: false },
-            { text: "Road narrows ahead", correct: true },
-            { text: "Dual carriageway ends ahead", correct: false },
-            { text: "Narrow bridge ahead", correct: false },
+        "question": "මෙම පාර සලකුණ දක්වන්නේ:",
+        "src": quiz1Image1,
+        "answers": [
+            { "text": "දැක්කාගේ පාර ඉදිරියට ආරම්භ වේ", "correct": false },
+            { "text": "පාර ඉදිරියට කුඩා වෙයි", "correct": true },
+            { "text": "දැක්කාගේ පාර ඉදිරියට අවසන් වේ", "correct": false },
+            { "text": "පෙර මාර්ග පාලනය ව්‍යාජයි", "correct": false }
         ]
     },
     {
-        question: "This road sign warns of:",
-        src: quiz1Image2,
-        answers: [
-            { text: "Slippery road ahead", correct: true },
-            { text: "Road with bends ahead", correct: false },
-            { text: "Dangerous junction ahead", correct: false },
-            { text: "Road narrows ahead", correct: false },
+        "question": "මෙම පාර සලකුණ අවවාද කරන්නේ:",
+        "src": quiz1Image2,
+        "answers": [
+            { "text": "පාර ඉදිරියට සුළි මාර්ගයක්", "correct": true },
+            { "text": "පාර ඉදිරියට මෝටර් වාහන", "correct": false },
+            { "text": "මතවත් ගමන ආරම්භකරනවාට පෙර", "correct": false },
+            { "text": "පාර විශාලි කිරීමේදී", "correct": false }
         ]
     },
     {
-        question: "This road sign signifies:",
-        src: quiz1Image3,
-        answers: [
-            { text: "Compulsory roundabout", correct: false },
-            { text: "No entry", correct: false },
-            { text: "Road closed to buses and lorries", correct: false },
-            { text: "Road closed", correct: true },
+        "question": "මෙම පාර සලකුණ හැඳින්වීමයි:",
+        "src": quiz1Image3,
+        "answers": [
+            { "text": "එක පාරක් පිටුවක්", "correct": false },
+            { "text": "ආරම්භය සහිතව", "correct": false },
+            { "text": "පෙර මාර්ග තබා ගැනීමක්", "correct": false },
+            { "text": "ආරම්භ මාර්ග වැන්නට", "correct": true }
+        ]
+    },    
+    {
+        "question": "මෙම පාර සලකුණ දැක්වෙන්නේ:",
+        "src": quiz1Image4,
+        "answers": [
+            { "text": "පාර ඉදිරියට වැසී ඇත", "correct": false },
+            { "text": "රේල් මාර්ග හරහා මාර්ගය", "correct": false },
+            { "text": "ආරක්ෂා නොකළ රේල් මාර්ග හරහා මාර්ගය", "correct": true },
+            { "text": "ආරක්ෂා නොකළ රේල් මාර්ග හරහා මාර්ගය ඉදිරියට", "correct": false }
         ]
     },
     {
-        question: "This road sign denotes:",
-        src: quiz1Image4,
-        answers: [
-            { text: "Road closed ahead", correct: false },
-            { text: "Railway crossing ahead", correct: false },
-            { text: "Unprotected railway crossing", correct: true },
-            { text: "Unprotected railway crossing ahead", correct: false },
+        "question": "මෙම පින්තූරයේ පෙන්වා ඇති T-සංඛ්‍යාව අතුරුගත කරනු ලබන රියැදියාව:",
+        "src": quiz1Image5,
+        "answers": [
+            { "text": "ප්‍රධාන පාරේ කිසිදු රථයක නොමැතිනම් ඉදිරියට ගමන යා හැක", "correct": false },
+            { "text": "සම්පූර්ණව නිශ්චිතව තානාපත්වීමක් අවශ්‍යයි", "correct": true },
+            { "text": "ඔහු/ඔබ සාර්ථකව දකුණු ටී පාරට පැමිණිය යුතුය", "correct": false },
+            { "text": "ඔහු/ඔබ වමට සලකා බැලීමේදී නතර කිරීම අවශ්‍ය නොවේ", "correct": false }
         ]
     },
     {
-        question: "The driver entering the T-junction shown in the picture:",
-        src: quiz1Image5,
-        answers: [
-            { text: "May proceed if there are no vehicles on the main road", correct: false },
-            { text: "Must come to a complete stop", correct: true },
-            { text: "Should stop only when turning right", correct: false },
-            { text: "Should not stop when turning left", correct: false },
+        "question": "මෙම පාර සලකුණ පෙන්වා ඇති සලකුණ:",
+        "src": quiz1Image6,
+        "answers": [
+            { "text": "සහභාගීත්ව සීමාව", "correct": false },
+            { "text": "මාර්ග බෙදීමේ නතර කිරීම", "correct": false },
+            { "text": "නතර කිරීමේ ලාංඡනයේ නතර කිරීම", "correct": false },
+            { "text": "ස්ථාන හෝ ඉරිසියෙන් සහ ක්ෂේම සලකුණු ඇති පාර සලකුණ", "correct": true }
+        ]
+    },    
+    {
+        "question": "රථවාහන පහන් වලින් සහිත හෝ අවශ්‍යතා සම්පූර්ණ කිරීමට:",
+        "src": quiz1Image7,
+        "answers": [
+            { "text": "වෑන් එක වමට හැරීම අවශ්‍යයි", "correct": false },
+            { "text": "වෑන් එක කেবল දකුණට හැරිය යුතුය", "correct": true },
+            { "text": "කාර් එක අවශ්‍ය නම් දකුණට හැරීමේ හැකියාව තිබේ", "correct": false },
+            { "text": "කාර් එක අවශ්‍ය නම් වමට හැරීමේ හැකියාව තිබේ", "correct": false }
         ]
     },
     {
-        question: "This road marking indicates:",
-        src: quiz1Image6,
-        answers: [
-            { text: "Give way line", correct: false },
-            { text: "Stopping line at road divider", correct: false },
-            { text: "Stopping line at stop sign", correct: false },
-            { text: "Give way line at yield signs and roundabouts", correct: true },
+        "question": "මෙම පාර සලකුණ පෙන්වා ඇති සලකුණ:",
+        "src": quiz1Image8,
+        "answers": [
+            { "text": "පාර ලාංඡනය", "correct": false },
+            { "text": "කේන්ද්‍රීය රේඛා ලාංඡනය", "correct": false },
+            { "text": "ඉදිරියට වමට හැරීම අවශ්‍ය නම් යාවත්කාලීන වාසනාව", "correct": false },
+            { "text": "දැක්කා මෙන්ම ක්ෂේම වැලි සහ ප්‍රතිපෙර නොතැබීමේ වැඩි අඩුකිරීම", "correct": true }
         ]
     },
     {
-        question: "At the intersection with traffic lights:",
-        src: quiz1Image7,
-        answers: [
-            { text: "The van may turn left if necessary", correct: false },
-            { text: "The van must turn right only", correct: true },
-            { text: "The car may turn right if necessary", correct: false },
-            { text: "The car may turn left if necessary", correct: false },
+        "question": "මෙම පින්තූරයේ රථවාහන පොලීසියේ නිර්දේශයෙන් පෙන්වා ඇත්තේ:",
+        "src": quiz1Image9,
+        "answers": [
+            { "text": "ආගමනාව යාවත්කාලීන බවත් පසුබැසීම ගැන හා කේන‍්‍යවත් එක", "correct": true },
+            { "text": "පසුගිය සිට සවිකරන කාරක", "correct": false },
+            { "text": "මඟ හොඳයි", "correct": false },
+            { "text": "ආගමනාව සහ පසුබැසීමෙන් වැඩීම", "correct": false }
+        ]
+    },    
+    {
+        "question": "ඉදිරි ප්‍රතිඵලය වන තත්වය අනුව ආලෝකනය වීමට අවශ්‍ය ඊළඟ වර්ණය කුමක්ද?",
+        "src": quiz1Image10,
+        "answers": [
+            { "text": "රතු සහ කෑමැති", "correct": false },
+            { "text": "රතු", "correct": true },
+            { "text": "හරිත සහ කෑමැති", "correct": false },
+            { "text": "හරිත", "correct": false }
         ]
     },
     {
-        question: "This road marking signifies:",
-        src: quiz1Image8,
-        answers: [
-            { text: "Lane marking", correct: false },
-            { text: "Center line marking", correct: false },
-            { text: "Longitudinal center line crossed only for right turns", correct: false },
-            { text: "Double continuous longitudinal center line prohibiting crossing, right turns, and straddling", correct: true },
+        "question": "ජංක්ෂනයේ වමට හැරීමට උනන්දුවක් ඇති විට, A, B සහ C අංක කලාප වල නිවැරදි ක්‍රියාමාර්ග කුමක්ද?",
+        "src": quiz1Image11,
+        "answers": [
+            { "text": "තීරණය කරන්න, සංඥාව පෙන්වන්න, සහ ක්‍රියා කරන්න", "correct": false },
+            { "text": "සිතන්න, තීරණය කරන්න, සහ ක්‍රියා කරන්න", "correct": true },
+            { "text": "සංඥාව පෙන්වන්න, තීරණය කරන්න, සහ ක්‍රියා කරන්න", "correct": false },
+            { "text": "ඉහත සියලුම නිවැරදි ය", "correct": false }
         ]
     },
     {
-        question: "What command is being given by the traffic police officer in the picture?",
-        src: quiz1Image9,
-        answers: [
-            { text: "Traffic approaching from both front and behind must stop", correct: true },
-            { text: "Traffic from behind must stop", correct: false },
-            { text: "Stop", correct: false },
-            { text: "Traffic approaching from the front must stop", correct: false },
+        "question": "පින්තූරයේ පෙන්වා ඇති ජංක්ෂනයේදී:",
+        "src": quiz1Image12,
+        "answers": [
+            { "text": "කාර් එක ඉදිරියට සෘජු ලෙස යා යුතුයි", "correct": true },
+            { "text": "ත්‍රිෂාව එකක් සෘජු ලෙස යා හැක", "correct": false },
+            { "text": "ත්‍රිෂාව එකක් වමට හැරිය හැකි හෝ සෘජු ලෙස යා හැක", "correct": false },
+            { "text": "කාර් එක වමට හැරිය හැකි හෝ සෘජු ලෙස යා හැක", "correct": false }
+        ]
+    },    
+    {
+        "question": "මෙම මාර්ග ලකුණෙන් පෙන්වා දෙනුයේ:",
+        "src": quiz1Image13,
+        "answers": [
+            { "text": "Y-ජංක්ෂනය ඉදිරියට", "correct": true },
+            { "text": "මාර්ගය ඉදිරියට නරක වෙයි", "correct": false },
+            { "text": "පැත්තේ මාර්ග දෙක එකට බැඳෙයි", "correct": false },
+            { "text": "දුල් මාර්ගය ඉදිරියට ආරම්භවේ", "correct": false }
         ]
     },
     {
-        question: "What is the next color to illuminate in the traffic signal?",
-        src: quiz1Image10,
-        answers: [
-            { text: "Red and yellow", correct: false },
-            { text: "Red", correct: true },
-            { text: "Green and yellow", correct: false },
-            { text: "Green", correct: false },
+        "question": "මෙම මාර්ග ලකුණෙන් අනතුරු ඇඟවීමක් පෙන්වන්නේ:",
+        "src": quiz1Image14,
+        "answers": [
+            { "text": "පිළිවෙල මාර්ගය ඉදිරියට", "correct": false },
+            { "text": "අධි බාගෙට දුෂ්කර පිහිටීම ඉදිරියට", "correct": false },
+            { "text": "වෑන් එකට පිළිවෙල මාර්ගය", "correct": false },
+            { "text": "අධි බාගෙට දුෂ්කර පිහිටීම පසුව", "correct": true }
         ]
     },
     {
-        question: "When intending to turn left at the junction, the correct procedure at points A, B, and C is:",
-        src: quiz1Image11,
-        answers: [
-            { text: "Decide, signal, and act", correct: false },
-            { text: "Observe, decide, and act", correct: true },
-            { text: "Signal, decide, and act", correct: false },
-            { text: "All of the above are correct", correct: false },
+        "question": "මෙම මාර්ග ලකුණෙන් පෙන්වන්නේ:",
+        "src": quiz1Image15,
+        "answers": [
+            { "text": "පෙදෙස් මාර්ගය ආරම්භවේ", "correct": false },
+            { "text": "පෙදෙස්වරුන්ට යිලාදීම", "correct": false },
+            { "text": "පෙදෙස් මාර්ගය", "correct": true },
+            { "text": "පෙදෙස් මාර්ගයක් ඉදිරියට", "correct": false }
+        ]
+    },    
+    {
+        "question": "මෙම මාර්ග ලකුණෙන් පෙන්වන්නේ:",
+        "src": quiz1Image16,
+        "answers": [
+            { "text": "සියලුම වාහන සඳහා මාර්ගය වසා ඇත", "correct": false },
+            { "text": "විශිෂ්ට අංක දිනවල නැවතුම් නොකිරීම", "correct": false },
+            { "text": "නැවතුම් සහ ඉස්සර කිරීම නොකිරීම", "correct": false },
+            { "text": "නැවතුම් නොකිරීම", "correct": true }
         ]
     },
     {
-        question: "In the junction shown in the picture:",
-        src: quiz1Image12,
-        answers: [
-            { text: "The car must proceed straight ahead", correct: true },
-            { text: "The trishaw may proceed straight ahead", correct: false },
-            { text: "The trishaw may turn right or proceed straight ahead", correct: false },
-            { text: "The car may turn right or proceed straight ahead", correct: false },
+        "question": "මෙම මාර්ග ලකුණෙහි පෙන්වන්නේ:",
+        "src": quiz1Image17,
+        "answers": [
+            { "text": "නහන ලකුණක්", "correct": false },
+            { "text": "සීමා ලකුණක්", "correct": true },
+            { "text": "ඇතුල් කිරීමේ ලකුණක්", "correct": false },
+            { "text": "අපද්‍රව්‍ය අනතුරු ඇඟවීමේ ලකුණක්", "correct": false }
         ]
     },
     {
-        question: "This road sign indicates:",
-        src: quiz1Image13,
-        answers: [
-            { text: "Y-junction ahead", correct: true },
-            { text: "Road narrows ahead", correct: false },
-            { text: "Side roads intersect from both directions ahead", correct: false },
-            { text: "Dual carriageway begins ahead", correct: false },
+        "question": "මෙම මාර්ග ලකුණෙන් අනතුරු ඇඟවීමක් පෙන්වන්නේ:",
+        "src": quiz1Image18,
+        "answers": [
+            { "text": "ඉදිරියට වම් බ්‍රහස්පතින්දා", "correct": false },
+            { "text": "ඉදිරියට දකුණු මාර්ගය", "correct": false },
+            { "text": "ඉදිරියට දකුණු මාර්ගය", "correct": true },
+            { "text": "ඉදිරියට දකුණු බ්‍රහස්පතින්දා", "correct": false }
+        ]
+    },    
+    {
+        "question": "මෙම මාර්ග ලකුණෙන් පෙන්වන්නේ:",
+        "src": quiz1Image19,
+        "answers": [
+            { "text": "පෙදෙසේ මාරු බඳුන", "correct": false },
+            { "text": "පොලිසියේ ස්ථානය", "correct": false },
+            { "text": "ඉන්ධන පිරවීමේ ස්ථානය", "correct": false },
+            { "text": "නැවතුම් ස්ථානය", "correct": true }
         ]
     },
     {
-        question: "This road sign warns of:",
-        src: quiz1Image14,
-        answers: [
-            { text: "Slippery road ahead", correct: false },
-            { text: "Dangerous uphill slope ahead", correct: false },
-            { text: "Slippery road for cars ahead", correct: false },
-            { text: "Dangerous downhill slope ahead", correct: true },
+        "question": "මෙම මාර්ග ලකුණෙහි පෙන්වන්නේ:",
+        "src": quiz1Image20,
+        "answers": [
+            { "text": "දරුවන්ගේ මාරු බඳුන", "correct": false },
+            { "text": "මුව ගැලපුම් පසුකරන අය", "correct": false },
+            { "text": "දරුවන් මාරු කරන ස්ථානය", "correct": true },
+            { "text": "පාසල් ඉදිරියට", "correct": false }
         ]
     },
     {
-        question: "This road sign denotes:",
-        src: quiz1Image15,
-        answers: [
-            { text: "Pedestrian lane begins", correct: false },
-            { text: "Yield to pedestrians", correct: false },
-            { text: "Pedestrian crossing", correct: true },
-            { text: "Pedestrian crossing ahead", correct: false },
+        "question": "මෙම මාර්ග ලකුණෙන් පෙන්වන්නේ:",
+        "src": quiz1Image21,
+        "answers": [
+            { "text": "චතුර්ස්ම මංසන්ධිය", "correct": false },
+            { "text": "ප්‍රථමික මාර්ගය", "correct": true },
+            { "text": "ප්‍රථමික මාර්ගය ඉදිරියට", "correct": false },
+            { "text": "මංසන්ධිය ඩක්ස්", "correct": false }
+        ]
+    },    
+    {
+        "question": "මෙම මාර්ග ලකුණෙන් පෙන්වන්නේ:",
+        "src": quiz1Image22,
+        "answers": [
+            { "text": "ප්‍රාණික ආසන ඉදිරියට", "correct": false },
+            { "text": "පසුබැසීමේ පශු ගොවිතලය ඉදිරියට", "correct": false },
+            { "text": "පශු හෝ අනෙක් ප්‍රාණයන් මාර්ගය එන කාලේ අක්‍රමික වීමට පසුවන්න", "correct": true },
+            { "text": "පෙදෙසේ මාරු බඳුන පශු සඳහා ඉදිරියට", "correct": false }
         ]
     },
     {
-        question: "This road sign signifies:",
-        src: quiz1Image16,
-        answers: [
-            { text: "Road closed to all vehicles", correct: false },
-            { text: "No parking on odd-numbered days", correct: false },
-            { text: "No parking or standing", correct: false },
-            { text: "No parking", correct: true },
+        "question": "මෙම මාර්ග ලකුණෙන් පෙන්වන්නේ:",
+        "src": quiz1Image23,
+        "answers": [
+            { "text": "ආකෘතිය සඳහා අවශ්‍ය වන දීමනාව", "correct": true },
+            { "text": "අනිවාර්ය ත්‍රිකෝණ මංසන්ධිය", "correct": false },
+            { "text": "ආකෘතිය ඉදිරියට", "correct": false },
+            { "text": "ප්‍රධාන මාර්ගය ඉදිරියට", "correct": false }
         ]
     },
     {
-        question: "This road sign represents a:",
-        src: quiz1Image17,
-        answers: [
-            { text: "Prohibition symbol", correct: false },
-            { text: "Restriction symbol", correct: true },
-            { text: "Mandatory symbol", correct: false },
-            { text: "Danger warning symbol", correct: false },
+        "question": "මෙම මාර්ග ලකුණෙන් පෙන්වන්නේ:",
+        "src": quiz1Image24,
+        "answers": [
+            { "text": "නවතා දැමීම ඉදිරියට", "correct": false },
+            { "text": "අන්‍යාන පද්ධතිය ඉදිරියට", "correct": false },
+            { "text": "අනිවාර්ය වට මංසන්ධිය ඉදිරියට", "correct": false },
+            { "text": "වට මංසන්ධිය ඉදිරියට", "correct": true }
+        ]
+    },    
+    {
+        "question": "මෙම මාර්ග ලකුණෙන් පෙන්වන්නේ:",
+        "src": quiz1Image25,
+        "answers": [
+            { "text": "අවාරයෙන් යාම", "correct": false },
+            { "text": "වම් පසක් මාරු කිරීම", "correct": false },
+            { "text": "මෙම පැත්තේ පිටවීම", "correct": true },
+            { "text": "වම් මාරු ඉදිරියට", "correct": false }
         ]
     },
     {
-        question: "This road sign warns of:",
-        src: quiz1Image18,
-        answers: [
-            { text: "Double bend to the left ahead", correct: false },
-            { text: "Right turn ahead", correct: false },
-            { text: "Right bend ahead", correct: true },
-            { text: "Hairpin bend to the right ahead", correct: false },
+        "question": "මෙම මාර්ග ලකුණෙන් පෙන්වන්නේ:",
+        "src": quiz1Image26,
+        "answers": [
+            { "text": "Y-මංසන්ධිය ඉදිරියට", "correct": false },
+            { "text": "ප්‍රධාන මාර්ගය ඉදිරියට", "correct": true },
+            { "text": "වම් පස සිට ආරෝපණය කිරීම", "correct": false },
+            { "text": "අදාල පස සිට ආරෝපණය කිරීම", "correct": false }
         ]
     },
     {
-        question: "This road sign indicates:",
-        src: quiz1Image19,
-        answers: [
-            { text: "Pedestrian crossing", correct: false },
-            { text: "Police station", correct: false },
-            { text: "Petrol filling station", correct: false },
-            { text: "Parking area", correct: true },
+        "question": "මෙම මාර්ග ලකුණෙන් පෙන්වන්නේ:",
+        "src": quiz1Image27,
+        "answers": [
+            { "text": "නගින්න පිහිටි නගර සීමා", "correct": false },
+            { "text": "වේග සීමාව", "correct": true },
+            { "text": "අවම වේග සීමාව", "correct": false },
+            { "text": "වේග සීමාව අවසන් කිරීම", "correct": false }
+        ]
+    },    
+    {
+        "question": "මෙම මාර්ග සංඥාව පෙන්වා දෙයි:",
+        "src": quiz1Image28,
+        "answers": [
+            { "text": "ප්‍රධාන මාර්ගය ඉදිරියට", "correct": false },
+            { "text": "ඉදිරියට වාහන සඳහා ප්‍රාථමිකත්වය", "correct": false },
+            { "text": "ඉදිරියෙන් පැමිණෙන වාහන සඳහා ප්‍රාථමිකත්වය", "correct": true },
+            { "text": "ඉදිරියෙන් පැමිණෙන වාහන සඳහා සැලකිලිමත් වන්න", "correct": false }
         ]
     },
     {
-        question: "This road sign denotes:",
-        src: quiz1Image20,
-        answers: [
-            { text: "Children's crossing", correct: false },
-            { text: "Blind people crossing ahead", correct: false },
-            { text: "Children crossing ahead", correct: true },
-            { text: "School ahead", correct: false },
+        "question": "මෙම මාර්ග සංඥාව දැනුම් දේ:",
+        "src": quiz1Image29,
+        "answers": [
+            { "text": "පැදිවීම සඳහා මාර්ගය ඉදිරියට", "correct": true },
+            { "text": "පැදිවීමේ රේඛාව ඉදිරියට", "correct": false },
+            { "text": "පැමිණෙන මාර්ගය ඉදිරියට", "correct": false },
+            { "text": "දරුණු විදුලි බල මාර්ගය ඉදිරියට", "correct": false }
         ]
     },
     {
-        question: "This road sign indicates:",
-        src: quiz1Image21,
-        answers: [
-            { text: "Four-way junction ahead", correct: false },
-            { text: "Priority road", correct: true },
-            { text: "Priority road ahead", correct: false },
-            { text: "Junction box", correct: false },
+        "question": "මෙම මාර්ග සටහනේ ආකෘතිය යනු කුමක්ද?",
+        "src": quiz1Image30,
+        "answers": [
+            { "text": "ප්‍රතිස්ථාපන ලකුණ", "correct": false },
+            { "text": "විවේචන සටහන් හෝ සංඥා පද්ධති සඟවා ගැනීම", "correct": true },
+            { "text": "විවේචන සටහන", "correct": false },
+            { "text": "යෝජනා සඳහා රේඛාව පෙන්වා ගැනීම", "correct": false }
+        ]
+    },      
+    {
+        "question": "මෙම මාර්ග සංඥාව පෙන්වා දෙයි:",
+        "src": quiz1Image31,
+        "answers": [
+            { "text": "ප්‍රධාන මාර්ගය ඉදිරියට", "correct": false },
+            { "text": "ප්‍රාථමිකත්වය ඉදිරියට", "correct": true },
+            { "text": "තුන් කෝණාකාර ජන්ක්ෂන් ඉදිරියට", "correct": false },
+            { "text": "ප්‍රාථමිකත්වය", "correct": false }
         ]
     },
     {
-        question: "This road sign warns of:",
-        src: quiz1Image22,
-        answers: [
-            { text: "Animal sanctuary ahead", correct: false },
-            { text: "Cattle farm ahead", correct: false },
-            { text: "Cattle or other animals may cross the road ahead", correct: true },
-            { text: "Pedestrian crossing for cattle ahead", correct: false },
+        "question": "මෙම මාර්ග සංඥාව පෙන්වා දෙයි:",
+        "src": quiz1Image32,
+        "answers": [
+            { "text": "වේග සීමාව", "correct": true },
+            { "text": "සාමාන්‍ය වේගය", "correct": false },
+            { "text": "අවම වේගය", "correct": false },
+            { "text": "නගර සීමාව තුළ වේග සීමාව", "correct": false }
         ]
     },
     {
-        question: "This road sign signifies:",
-        src: quiz1Image23,
-        answers: [
-            { text: "Yield", correct: true },
-            { text: "Compulsory triangular junction", correct: false },
-            { text: "Yield ahead", correct: false },
-            { text: "Main road ahead", correct: false },
+        "question": "මෙම මාර්ග සංඥාව දැනුම් දේ:",
+        "src": quiz1Image33,
+        "answers": [
+            { "text": "ඉදිරියට වම්පස අතට ද්විත්ව කනිකා", "correct": false },
+            { "text": "ඉදිරියට වම්පස අතට හෙයාපින් කනිකා", "correct": true },
+            { "text": "ඉදිරියට වම්පස අතට වක්‍රය", "correct": false },
+            { "text": "ඉදිරියට යූ-turn", "correct": false }
+        ]
+    },     
+    {
+        "question": "මෙම මාර්ග සලකුණ පෙන්වා දෙයි:",
+        "src": quiz1Image34,
+        "answers": [
+            { "text": "ඩියුල් මාර්ගය ඉදිරියට ආරම්භ වේ", "correct": false },
+            { "text": "මාර්ගය ඉදිරියට සැරවෙයි", "correct": false },
+            { "text": "ඩියුල් මාර්ගය ඉදිරියට අවසන් වේ", "correct": true },
+            { "text": "සැරැවීමේ පාලම ඉදිරියට", "correct": false }
         ]
     },
     {
-        question: "This road sign denotes:",
-        src: quiz1Image24,
-        answers: [
-            { text: "Stop ahead", correct: false },
-            { text: "Crossroads ahead", correct: false },
-            { text: "Compulsory roundabout ahead", correct: false },
-            { text: "Roundabout ahead", correct: true },
+        "question": "චිත්‍රයේ සලකුණු කළ රේඛාව පෙන්වා දෙයි:",
+        "src": quiz1Image35,
+        "answers": [
+            { "text": "ප්‍රාථමිකත්වය රේඛාව", "correct": false },
+            { "text": "ප්‍රවාහ ලාම්පුවල පරිසර පොලීසියේ මූලික නඩු අත්හිටවීමේදී නවතම රේඛාව", "correct": false },
+            { "text": "අවලංගු ලකුණු අත්හිටවීමේ රේඛාව", "correct": true },
+            { "text": "ප්‍රාථමිකත්වය රේඛාව වෘත්තමාන", "correct": false }
         ]
     },
     {
-        question: "This road sign indicates:",
-        src: quiz1Image25,
-        answers: [
-            { text: "Turn ahead", correct: false },
-            { text: "Turn left", correct: false },
-            { text: "Pass on this side", correct: true },
-            { text: "Left turn ahead", correct: false },
+        "question": "මෙම මාර්ග සලකුණ පෙන්වා දෙයි:",
+        "src": quiz1Image8,
+        "answers": [
+            { "text": "මාර්ග රේඛා සලකුණු", "correct": false },
+            { "text": "මධ්‍ය රේඛා සලකුණු", "correct": false },
+            { "text": "දුම්පතේ මධ්‍ය රේඛාව ක්‍රියාමානකරණය, ඔත්තු වාගේ පාලනය", "correct": false },
+            { "text": "ද්විත්ව ක්‍රියාමානකරණය, වාතාවරණය සහ නිර්මිතතා", "correct": true }
+        ]
+    },      
+    {
+        "question": "චිත්‍රයේ පෙන්වා ඇති ද්වාරයේදී:",
+        "src": quiz1Image12,
+        "answers": [
+            { "text": "කාර්යය ධාවනය කිරීමේදී ඉදිරියට පිටවිය යුතුය", "correct": true },
+            { "text": "ට්‍රිෂාව ඉදිරියට පිටවිය හැකිය", "correct": false },
+            { "text": "ට්‍රිෂාව දකුණු පැත්තට හැරී ඉදිරියට පිටවිය හැකිය", "correct": false },
+            { "text": "කාර්යය දකුණු පැත්තට හැරී ඉදිරියට පිටවිය හැකිය", "correct": false }
         ]
     },
     {
-        question: "This road sign signifies:",
-        src: quiz1Image26,
-        answers: [
-            { text: "Y-junction ahead", correct: false },
-            { text: "Main road ahead", correct: true },
-            { text: "Give priority to traffic from the left", correct: false },
-            { text: "Give priority to traffic from", correct: false },
+        "question": "මෙම මාර්ග සලකුණ පෙන්වා දෙයි:",
+        "src": quiz1Image38,
+        "answers": [
+            { "text": "ඇක්සල් පරම වශයෙන් බර සීමා", "correct": false },
+            { "text": "වේග සීමාව අවසන් වේ", "correct": true },
+            { "text": "වේග සීමාව ආරම්භ වේ", "correct": false },
+            { "text": "වේග සීමාව", "correct": false }
         ]
     },
     {
-        question: "This road sign denotes:",
-        src: quiz1Image27,
-        answers: [
-            { text: "Entering city limits", correct: false },
-            { text: "Speed limit", correct: true },
-            { text: "Minimum speed limit", correct: false },
-            { text: "End of speed limit", correct: false },
+        "question": "මෙම මාර්ග සලකුණ ආවරණය කරනවා:",
+        "src": quiz1Image39,
+        "answers": [
+            { "text": "ඉදිරියට දකුණු දිගේ දෙගුණ bend", "correct": false },
+            { "text": "ඉදිරියට U-turn", "correct": false },
+            { "text": "ඉදිරියට දකුණු bend", "correct": false },
+            { "text": "ඉදිරියට දකුණු hairpin bend", "correct": true }
         ]
     },
     {
-        question: "This road sign indicates:",
-        src: quiz1Image28,
-        answers: [
-            { text: "Main road ahead", correct: false },
-            { text: "Priority for traffic ahead", correct: false },
-            { text: "Priority over oncoming traffic", correct: true },
-            { text: "Watch for oncoming vehicles", correct: false },
+        "question": "මෙම මාර්ග සලකුණ පෙන්වා දෙයි:",
+        "src": quiz1Image40,
+        "answers": [
+            { "text": "සමාන්‍ය දිනවල පිවිසුම වහාම නිරෝධායනය", "correct": false },
+            { "text": "ඔdd-අංක දිනවල වාහන නවතා දැමීම", "correct": false },
+            { "text": "Even-අංක දිනවල වාහන නවතා දැමීම", "correct": true },
+            { "text": "ඉඳුරුව අංක දිනවල පිවිසුම නැවත ලිහිල් කරන්න", "correct": false }
         ]
-    },
-    {
-        question: "This road sign warns of:",
-        src: quiz1Image29,
-        answers: [
-            { text: "Pedestrian crossing ahead", correct: true },
-            { text: "Crossing line ahead", correct: false },
-            { text: "Passenger crossing ahead", correct: false },
-            { text: "Children crossing ahead", correct: false },
-        ]
-    },
-    {
-        question: "What does the horizontal line in this road marking indicate?",
-        src: quiz1Image30,
-        answers: [
-            { text: "Yield sign", correct: false },
-            { text: "Stop line at stop signs or traffic signals", correct: true },
-            { text: "Stop line at stop signal", correct: false },
-            { text: "Stop signal at roundabout", correct: false },
-        ]
-    },
-    {
-        question: "This road sign indicates:",
-        src: quiz1Image31,
-        answers: [
-            { text: "Main road ahead", correct: false },
-            { text: "Yield ahead", correct: true },
-            { text: "Triangular junction ahead", correct: false },
-            { text: "Yield", correct: false },
-        ]
-    },
-    {
-        question: "This road sign denotes:",
-        src: quiz1Image32,
-        answers: [
-            { text: "Speed limit", correct: true },
-            { text: "Average speed", correct: false },
-            { text: "Minimum speed", correct: false },
-            { text: "Speed limit within city limits", correct: false },
-        ]
-    },
-    {
-        question: "This road sign warns of:",
-        src: quiz1Image33,
-        answers: [
-            { text: "Double bend to the left ahead", correct: false },
-            { text: "Hairpin bend to the left ahead", correct: true },
-            { text: "Bend to the left ahead", correct: false },
-            { text: "U-turn ahead", correct: false },
-        ]
-    },
-    {
-        question: "This road sign signifies:",
-        src: quiz1Image34,
-        answers: [
-            { text: "Dual carriageway begins ahead", correct: false },
-            { text: "Road narrows ahead", correct: false },
-            { text: "Dual carriageway ends ahead", correct: true },
-            { text: "Narrow bridge ahead", correct: false },
-        ]
-    },
-    {
-        question: "The horizontal line marked in the picture indicates:",
-        src: quiz1Image35,
-        answers: [
-            { text: "Yield line", correct: false },
-            { text: "Line to stop when traffic lights are manually overridden by traffic police", correct: false },
-            { text: "Stop line at stop signs", correct: true },
-            { text: "Yield sign at roundabouts", correct: false },
-        ]
-    },
-    {
-        question: "This road marking indicates:",
-        src: quiz1Image8,
-        answers: [
-            { text: "Lane marking", correct: false },
-            { text: "Center line marking", correct: false },
-            { text: "Longitudinal center line crossed only for right turns", correct: false },
-            { text: "Double continuous longitudinal center line prohibiting crossing, right turns, and straddling", correct: true },
-        ]
-    },
-    {
-        question: "At the junction shown in the picture:",
-        src: quiz1Image12,
-        answers: [
-            { text: "The car must proceed straight ahead", correct: true },
-            { text: "The trishaw may proceed straight ahead", correct: false },
-            { text: "The trishaw may turn right or proceed straight ahead", correct: false },
-            { text: "The car may turn right or proceed straight ahead", correct: false },
-        ]
-    },
-    {
-        question: "This road sign indicates:",
-        src: quiz1Image38,
-        answers: [
-            { text: "Weight limit per axle", correct: false },
-            { text: "End of speed limit", correct: true },
-            { text: "Beginning of speed limit", correct: false },
-            { text: "Speed limit", correct: false },
-        ]
-    },
-    {
-        question: "This road sign warns of:",
-        src: quiz1Image39,
-        answers: [
-            { text: "Double bend to the right ahead", correct: false },
-            { text: "U-turn ahead", correct: false },
-            { text: "Right bend ahead", correct: false },
-            { text: "Hairpin bend to the right ahead", correct: true },
-        ]
-    },
-    {
-        question: "This road sign signifies:",
-        src: quiz1Image40,
-        answers: [
-            { text: "Entry prohibited on even-numbered days", correct: false },
-            { text: "No parking on odd-numbered days", correct: false },
-            { text: "No parking on even-numbered days", correct: true },
-            { text: "Entry prohibited on odd-numbered days", correct: false },
-        ]
-    },
+    },    
 ];

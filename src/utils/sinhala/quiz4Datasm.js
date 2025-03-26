@@ -2,368 +2,326 @@ import quiz1Image18 from '../../assets/4-18.png';
 
 export const quiz4Datasm = [
     {
-        "question": "What should you do when a vehicle is involved in an accident?",
+        "question": "වාහනයක් අනතුරකට ලක්වූ විට ඔබ කළ යුතු දේ කුමක්ද?",
         "answers": [
-            { "text": "Do not remove the vehicle for any reason", "correct": false },
-            { "text": "Keep the vehicle in the same position", "correct": false },
-            { "text": "Remove the vehicle from the road if it is causing traffic", "correct": false },
-            { "text": "Mark the vehicle's position on the road and use it to transport the injured to the hospital", "correct": true }
+            { "text": "කිසිදු හේතුවකට වාහනය ඉවත් නොකළ යුතුය.", "correct": false },
+            { "text": "වාහනය එය සිටින ස්ථානයේම තබා ගන්න.", "correct": false },
+            { "text": "වාහනය රථවාහන තදබදය ඇතිකරනවා නම් මාර්ගයෙන් ඉවත් කරන්න.", "correct": false },
+            { "text": "වාහනයේ ස්ථානය මාර්ගයේ සලකුණු කර, තුවාල ලැබූ පුද්ගලයින් රෝහලට ගෙනයාම සඳහා භාවිතා කරන්න.", "correct": true }
         ]
     },
     {
-        "question": "What should you do if a red light appears on the dashboard while driving?",
+        "question": "ගමන් මැදිහිඳදී යාන්ත්‍ර විදුලි පුවරුවේ රතු ආලෝකයක් දැක්කාහොත් ඔබ කළ යුතු දේ කුමක්ද?",
         "answers": [
-            { "text": "Drive to the nearest garage", "correct": false },
-            { "text": "Drive to your destination carefully", "correct": false },
-            { "text": "Ignore it as it is not important", "correct": false },
-            { "text": "Stop immediately and check for the fault", "correct": true }
+            { "text": "ළඟම ගරාජයකට ගමන් කරන්න.", "correct": false },
+            { "text": "ප්‍රවේශමෙන් ආසන්නතම ගමනාන්තයට ගමන් කරන්න.", "correct": false },
+            { "text": "එය වැදගත් නොවන නිසා නොසලකා හරින්න.", "correct": false },
+            { "text": "තත්ක්ෂණයෙන් නවතා දෝෂය පරීක්ෂා කරන්න.", "correct": true }
         ]
     },
     {
-        "question": "What does it mean when a vehicle is suitable to drive on the road?",
+        "question": "මාර්ගයේ ගමන් කිරීමට සුදුසු වාහනයක් යනු කුමක්ද?",
         "answers": [
-            { "text": "All mechanical components are in optimal condition, and all documents, including insurance and the driving license, are up to date", "correct": true },
-            { "text": "Only the insurance and the driving license are sufficient", "correct": false },
-            { "text": "Only the steering wheel, tires, and brakes should be in good condition", "correct": false },
-            { "text": "If the driver can control the vehicle, any vehicle is acceptable", "correct": false }
+            { "text": "සියලුම යාන්ත්‍රික කොටස් වඩාත් සුපිරි තත්ත්වයෙන් පවතින අතර රක්ෂණය සහ රියදුරු බලපත්‍රය ඇතුළු සියලුම ලියකියවිලි යාවත්කාලීන වේ.", "correct": true },
+            { "text": "රක්ෂණය සහ රියදුරු බලපත්‍රය පමණක් ප්‍රමාණවත් වේ.", "correct": false },
+            { "text": "ටයර්, පඩල්, සහ තට්ටුව යහපත් තත්ත්වයෙන් පවතිනවා නම් ප්‍රමාණවත් වේ.", "correct": false },
+            { "text": "රියදුරුට වාහනය පාලනය කළ හැකි නම් එය ප්‍රමාණවත් වේ.", "correct": false }
         ]
     },
     {
-        "question": "What does the junction box controlled by signal lights indicate?",
+        "question": "සංඥා ලාම්පු මඟින් පාලනය වන හන්දියක සංඥා කොටුවක් මින් පෙන්නුම් කරන්නේ කුමක්ද?",
         "answers": [
-            { "text": "It shows that there is traffic congestion at the junction", "correct": false },
-            { "text": "It allows entry into the junction at any time, except when turning right", "correct": false },
-            { "text": "It is a signal to capture attention for the junction", "correct": false },
-            { "text": "Even if the green light is on, you cannot enter the junction box unless turning right", "correct": true }
+            { "text": "එය හන්දියේ රථවාහන තදබදයක් ඇතිවීම පෙන්වයි.", "correct": false },
+            { "text": "දකුණට හැරවීම හැර වෙනත් ඕනෑම අවස්ථාවක හන්දියට ඇතුළත් විය හැක.", "correct": false },
+            { "text": "හන්දිය පිළිබඳව අවධානය යොමු කිරීමට සංඥාක්‍රියාවක්.", "correct": false },
+            { "text": "කොළ ආලෝකය දැල්වුවද, දකුණට හැරවීම හැර සංඥා කොටුවට ඇතුළත් විය නොහැක.", "correct": true }
         ]
     },
     {
-        "question": "What is the correct procedure when starting and driving a manual vehicle on flat land?",
+        "question": "තට්ටුබැසී ඉවතට ගමන් කරන අතින්ම වාහනයක් ආරම්භ කිරීමේ සහ එය පාලනය කිරීමේ නිවැරදි ක්‍රමය කුමක්ද?",
         "answers": [
-            { "text": "Left leg on the brake pedal and right leg on the floor", "correct": false },
-            { "text": "Right leg on the floor and left leg on the clutch pedal", "correct": false },
-            { "text": "Right leg on the accelerator pedal and left leg on the clutch pedal", "correct": true },
-            { "text": "Right leg on the brake pedal and left leg on the clutch pedal", "correct": false }
+            { "text": "වම පදය තට්ටුපට්ටය මත, දකුණ පදය බිම.", "correct": false },
+            { "text": "දකුණ පදය බිම සහ වම පදය ක්ලච් මත.", "correct": false },
+            { "text": "දකුණ පදය ආධාරක පඩලය මත සහ වම පදය ක්ලච් මත.", "correct": true },
+            { "text": "දකුණ පදය බ්රේක් මත සහ වම පදය ක්ලච් මත.", "correct": false }
         ]
     },
     {
-        "question": "What should your leg positions be when driving a manual vehicle on a steep incline?",
+        "question": "අධික උසකින් යුත් මාර්ගයකින් ගමන් කරන විට පය පිහිටවිය යුත්තේ කෙසේද?",
         "answers": [
-            { "text": "Left leg on the clutch pedal and right leg on the brake pedal", "correct": true },
-            { "text": "Right leg on the floor and left leg on the clutch pedal", "correct": false },
-            { "text": "Right leg on the brake pedal and left leg on the floor", "correct": false },
-            { "text": "Left leg on the clutch pedal lightly and right leg on the accelerator", "correct": false }
+            { "text": "වම පදය ක්ලච් මත සහ දකුණ පදය බ්රේක් මත.", "correct": true },
+            { "text": "දකුණ පදය බිම සහ වම පදය ක්ලච් මත.", "correct": false },
+            { "text": "දකුණ පදය බ්රේක් මත සහ වම පදය බිම.", "correct": false },
+            { "text": "වම පදය ක්ලච් මත සුමටව තබා, දකුණ පදය ආධාරක මත.", "correct": false }
         ]
     },
     {
-        "question": "What should your leg positions be when driving a manual vehicle on flat roads with no traffic?",
+        "question": "රියදුරු රිය පැදවීමේදී පය පිහිටවිය යුත්තේ කෙසේද (මාර්ගය ඉතා පහල සහ රථවාහන නොමැති විට)?",
         "answers": [
-            { "text": "Left leg on the clutch pedal and right leg on the brake pedal", "correct": false },
-            { "text": "Left leg on the floor and right leg on the accelerator", "correct": true },
-            { "text": "Left leg on the clutch pedal lightly and right leg on the accelerator", "correct": false },
-            { "text": "Left leg on the brake pedal lightly and right leg on the accelerator", "correct": false }
+            { "text": "වම පදය ක්ලච් මත සහ දකුණ පදය බ්රේක් මත.", "correct": false },
+            { "text": "වම පදය බිම සහ දකුණ පදය ආධාරක මත.", "correct": true },
+            { "text": "වම පදය ක්ලච් මත සුමටව තබා, දකුණ පදය ආධාරක මත.", "correct": false },
+            { "text": "වම පදය බ්රේක් මත සුමටව තබා, දකුණ පදය ආධාරක මත.", "correct": false }
         ]
     },
     {
-        "question": "What should your leg positions be when driving a manual vehicle on a road with traffic?",
+        "question": "රථවාහන තදබදය සහිත මාර්ගයක ගමන් කරන විට පය පිහිටවිය යුත්තේ කෙසේද?",
         "answers": [
-            { "text": "Left leg on the floor and right leg on the brake pedal", "correct": false },
-            { "text": "Left leg on the clutch pedal and right leg on the brake pedal lightly", "correct": true },
-            { "text": "Left leg on the floor and right leg on the accelerator", "correct": false },
-            { "text": "Left leg on the clutch pedal lightly and right leg on the accelerator", "correct": false }
+            { "text": "වම පදය බිම සහ දකුණ පදය බ්රේක් මත.", "correct": false },
+            { "text": "වම පදය ක්ලච් මත සහ දකුණ පදය බ්රේක් මත සුමටව.", "correct": true },
+            { "text": "වම පදය බිම සහ දකුණ පදය ආධාරක මත.", "correct": false },
+            { "text": "වම පදය ක්ලච් මත සුමටව තබා, දකුණ පදය ආධාරක මත.", "correct": false }
         ]
     },
     {
-        "question": "What is the correct way to overtake another vehicle?",
+        "question": "වෙනත් වාහනයක් ඉස්මතු කිරීමට නිවැරදි ක්‍රමය කුමක්ද?",
         "answers": [
-            { "text": "It depends on the speed of the vehicles", "correct": false },
-            { "text": "Signal, observe the road well, and control the vehicle", "correct": false },
-            { "text": "Accelerate, signal, observe, and control the vehicle", "correct": false },
-            { "text": "Observe the road carefully, signal, and control the vehicle", "correct": true }
+            { "text": "වාහන වේගය අනුව එය මත යැදේ.", "correct": false },
+            { "text": "සංඥා ලබා මාර්ගය නිරීක්ෂණය කර, වාහනය පාලනය කරන්න.", "correct": false },
+            { "text": "වේගය වැඩි කර, සංඥා ලබා, නිරීක්ෂණය කර, වාහනය පාලනය කරන්න.", "correct": false },
+            { "text": "මාර්ගය විමසිලිමත්ව නිරීක්ෂණය කර, සංඥා ලබා, වාහනය පාලනය කරන්න.", "correct": true }
         ]
     },
     {
-        "question": "What is the first thing you should do when overtaking another vehicle?",
+        "question": "වෙනත් වාහනයක් ඉස්මතු කිරීමේදී ඔබ කළ යුතු මුල්ම කරුණ කුමක්ද?",
         "answers": [
-            { "text": "Move the vehicle into the correct lane", "correct": false },
-            { "text": "Prepare by adjusting your speed", "correct": false },
-            { "text": "Signal your intention", "correct": false },
-            { "text": "Check your surroundings by looking through the mirror", "correct": true }
-        ]
-    },    
-    {
-        "question": "When preparing to overtake a vehicle, if you realize that another vehicle is preparing to overtake you, what should you do first?",
-        "answers": [
-            { "text": "There is no need to pay attention to vehicles approaching from behind", "correct": false },
-            { "text": "Immediately signal that you are overtaking", "correct": true },
-            { "text": "Immediately and clearly reduce your speed", "correct": false },
-            { "text": "Immediately and clearly signal that you are moving to the left", "correct": false }
+            { "text": "වාහනය නිවැරදි මාර්ගයට ගෙනයාම.", "correct": false },
+            { "text": "වේගය ගැලපෙන පරිදි සූදානම් වීම.", "correct": false },
+            { "text": "ඔබේ අදහස සංඥා කිරීම.", "correct": false },
+            { "text": "සන්ධි දර්ශකය මගින් ඔබේ අවට ඇති තත්වය පරීක්ෂා කිරීම.", "correct": true }
         ]
     },
     {
-        "question": "If a yellow line is marked on the road parallel to the pavement, what does it indicate?",
+        "question": "ඔබ වාහනයක් ඉස්මතු කිරීමට සූදානම් වන විට, පසුපසින් වාහනයක් ඔබව ඉස්මතු කිරීමට සූදානම් බව තේරුම් ගන්නාවිට ඔබ කළ යුතු මුල්ම දේ කුමක්ද?",
         "answers": [
-            { "text": "A line indicating the edge of the road", "correct": false },
-            { "text": "Parking is allowed in this area", "correct": false },
-            { "text": "No parking is allowed in this area", "correct": true },
-            { "text": "You can park with the back wheels on the pavement", "correct": false }
+            { "text": "පසුපසින් පැමිණෙන වාහනවලට අවධානය යොමු කිරීමට අවශ්‍ය නැත.", "correct": false },
+            { "text": "ඔබ ඉස්මතු වීමේ අදහස 즉시 සංඥා කරන්න.", "correct": true },
+            { "text": "ඔබේ වේගය වහාම සහ පැහැදිලිව අඩු කරන්න.", "correct": false },
+            { "text": "වමට ගමන් කිරීම සඳහා වහාම සහ පැහැදිලිව සංඥා කරන්න.", "correct": false }
         ]
     },
     {
-        "question": "If a white line is marked on the road parallel to the pavement, what does it indicate?",
+        "question": "මාර්ගය මත පදන්ට සමාන්තරව කහ රේඛාවක් ඇත්නම් එය කුමක් දක්වයිද?",
         "answers": [
-            { "text": "A line indicating the edge of the road", "correct": true },
-            { "text": "Parking is allowed in this area", "correct": false },
-            { "text": "No parking is allowed in this area", "correct": false },
-            { "text": "You can park with the back wheels on the pavement", "correct": false }
+            { "text": "මාර්ගයේ අගය දක්වන රේඛාවකි.", "correct": false },
+            { "text": "මෙම ප්‍රදේශයේ වාහන නැවැත්වීම සඳහා ඉඩ ඇත.", "correct": false },
+            { "text": "මෙම ප්‍රදේශයේ වාහන නැවැත්වීම තහනම්ය.", "correct": true },
+            { "text": "පසු පදල් පදන්ට මත තැබීමෙන් වාහනය නැවැත්විය හැක.", "correct": false }
         ]
     },
     {
-        "question": "What are the maximum speed limits within city limits?",
+        "question": "මාර්ගය මත පදන්ට සමාන්තරව සුදු රේඛාවක් ඇත්නම් එය කුමක් දක්වයිද?",
         "answers": [
-            { "text": "50 km/h for all vehicles", "correct": false },
-            { "text": "Motorcycles, motor cars, dual-purpose vehicles, business vehicles, and three-wheelers have limits of 50 km/h, 50 km/h, and 40 km/h respectively", "correct": false },
-            { "text": "Motorcycles, motor cars, and dual-purpose vehicles 70 km/h, business vehicles 60 km/h, three-wheelers 40 km/h", "correct": false },
-            { "text": "Motorcycles, motor cars, and dual-purpose vehicles 50 km/h, business vehicles 50 km/h, three-wheelers 40 km/h", "correct": true }
+            { "text": "මාර්ගයේ අගය දක්වන රේඛාවකි.", "correct": true },
+            { "text": "මෙම ප්‍රදේශයේ වාහන නැවැත්වීම සඳහා ඉඩ ඇත.", "correct": false },
+            { "text": "මෙම ප්‍රදේශයේ වාහන නැවැත්වීම තහනම්ය.", "correct": false },
+            { "text": "පසු පදල් පදන්ට මත තැබීමෙන් වාහනය නැවැත්විය හැක.", "correct": false }
         ]
     },
     {
-        "question": "What is a pedestrian crossing?",
+        "question": "නගර සීමාවන් තුළ උපරිම වේග සීමාවන් කුමක්ද?",
         "answers": [
-            { "text": "Pedestrians can only cross the road at designated pedestrian crossings", "correct": true },
-            { "text": "Pedestrians can cross anywhere within 25 meters of the crossing", "correct": false },
-            { "text": "Pedestrians cannot cross anywhere within 50 meters of the crossing", "correct": false },
-            { "text": "Pedestrians can cross anywhere within 50 meters of the crossing", "correct": false }
+            { "text": "සියලුම වාහන සඳහා 50 km/h වේ.", "correct": false },
+            { "text": "මෝටර්සයිකල්, මෝටර් කාර්, හා දෙමුහුන් භාවිත වාහන 50 km/h, ව්‍යාපාරික වාහන 50 km/h, තුන්චක්‍රී 40 km/h වේ.", "correct": true },
+            { "text": "මෝටර්සයිකල්, මෝටර් කාර්, හා දෙමුහුන් භාවිත වාහන 70 km/h, ව්‍යාපාරික වාහන 60 km/h, තුන්චක්‍රී 40 km/h වේ.", "correct": false },
+            { "text": "මෝටර්සයිකල්, මෝටර් කාර්, හා දෙමුහුන් භාවිත වාහන 50 km/h, ව්‍යාපාරික වාහන 60 km/h, තුන්චක්‍රී 40 km/h වේ.", "correct": false }
         ]
     },
     {
-        "question": "What should you do if only the yellow light is on at a traffic light signal?",
+        "question": "පෙරේරා මාරුවක් යනු කුමක්ද?",
         "answers": [
-            { "text": "Speed up before the red light turns on", "correct": false },
-            { "text": "The next signal will be green, so get ready to move forward", "correct": false },
-            { "text": "Stop because the next signal will be red", "correct": true },
-            { "text": "Move forward since the green light will come next", "correct": false }
+            { "text": "ප්‍රදේශය තුළ මාරුව තිබේ නම් පදිකයින්ට මාරුවීමට අවසර ඇත.", "correct": true },
+            { "text": "පදිකයින්ට මාරුවේ සිට 25 මීටර් අතුරින් ඕනෑම තැනක මාරුවිය හැක.", "correct": false },
+            { "text": "පදිකයින්ට මාරුවේ සිට 50 මීටර් අතුරින් ඕනෑම තැනක මාරුවිය නොහැක.", "correct": false },
+            { "text": "පදිකයින්ට මාරුවේ සිට 50 මීටර් අතුරින් ඕනෑම තැනක මාරුවිය හැක.", "correct": false }
         ]
     },
     {
-        "question": "What should you do if you encounter a bend that is not visible?",
+        "question": "මාර්ග සංඥාවේ කහ ආලෝකය පමණක් දැල්වී ඇත්නම් ඔබ කළ යුතු දේ කුමක්ද?",
         "answers": [
-            { "text": "Drive in the middle of the road", "correct": false },
-            { "text": "Drive at the same speed and honk your horn", "correct": false },
-            { "text": "Reduce your speed and proceed, honking once, with the expectation of stopping at any moment", "correct": true },
-            { "text": "Speed up without honking", "correct": false }
+            { "text": "රතු ආලෝකය දැල්වීමට පෙර වේගය වැඩි කරන්න.", "correct": false },
+            { "text": "ඊළඟ සංඥාව කොළ වේ, එබැවින් ඉදිරියට යාමට සූදානම් වන්න.", "correct": false },
+            { "text": "නවතන්න, මන්ද ඊළඟ සංඥාව රතු වේ.", "correct": true },
+            { "text": "ඊළඟ සංඥාව කොළ වේ, එබැවින් ඉදිරියට යන්න.", "correct": false }
         ]
     },
     {
-        "question": "When turning a vehicle towards a junction according to the diagram at point (a), what should you do?",
-        "src": "quiz1Image18",
+        "question": "නොපෙනෙන වක්‍රයකට මුහුණ දුන් විට ඔබ කළ යුතු දේ කුමක්ද?",
         "answers": [
-            { "text": "Stop the vehicle", "correct": false },
-            { "text": "Signal your intention", "correct": false },
-            { "text": "Observe through the side mirrors", "correct": true },
-            { "text": "Limit your speed", "correct": false }
+            { "text": "මාර්ගය මධ්‍යයේ ගමන් කරන්න.", "correct": false },
+            { "text": "එකම වේගයෙන් ගමන් කර හඬ දිය යුතුය.", "correct": false },
+            { "text": "ඔබේ වේගය අඩු කර, අවශ්‍ය වුවහොත් නවතින්න යන බලාපොරොත්තුවෙන්, විනාඩියක් හඬ දී ඉදිරියට යන්න.", "correct": true },
+            { "text": "හඬ නොදී වේගය වැඩි කරන්න.", "correct": false }
         ]
     },
     {
-        "question": "When turning a vehicle towards a junction according to the diagram at point (b), what should you do?",
-        "src": "quiz1Image18",
+        "question": "ලේඛනය අනුව, A හි කපා මග රේඛාව කුමක් දැක්වීමක්ද?",
+        "src": {quiz1Image18},
         "answers": [
-            { "text": "Honk your horn", "correct": false },
-            { "text": "Observe through the side mirrors", "correct": false },
-            { "text": "Signal your intention", "correct": true },
-            { "text": "Accelerate your speed", "correct": false }
+            { "text": "ඉදිරියට මාර්ග සංයෝගයක්", "correct": false },
+            { "text": "අවිධිගත කළ නොහැකි දිගු රේඛාවක්", "correct": false },
+            { "text": "මධ්‍යම රේඛා සලකුණ", "correct": true },
+            { "text": "පාර මාර්ගය", "correct": false }
         ]
     },
     {
-        "question": "When turning a vehicle towards a junction according to the diagram at point (c), what should you do?",
-        "src": "quiz1Image18",
+        "question": "ලේඛනය අනුව, B හි කපා මග රේඛාව කුමක් දැක්වීමක්ද?",
+        "src": {quiz1Image18},
         "answers": [
-            { "text": "Honk your horn", "correct": false },
-            { "text": "Observe through the side mirrors", "correct": false },
-            { "text": "Signal your intention", "correct": false },
-            { "text": "Move to the proper lane", "correct": true }
-        ]
-    },    
-    {
-        "question": "According to the diagram, what does the broken line at A depict?",
-        "src": "quiz1Image18",
-        "answers": [
-            { "text": "A junction ahead", "correct": false },
-            { "text": "A longitudinal line that cannot be crossed", "correct": false },
-            { "text": "Center line marking", "correct": true },
-            { "text": "Lane marking", "correct": false }
+            { "text": "මාර්ග බෙදන රේඛාව", "correct": false },
+            { "text": "නවතින සලකුණේ වැටුප් රේඛාව", "correct": false },
+            { "text": "ඉස්සරම් තැබීමේ දායක රේඛාව", "correct": true },
+            { "text": "පදිකයා හෝ පදනම් පාර", "correct": false }
         ]
     },
     {
-        "question": "According to the diagram, what does the broken line at B depict?",
-        "src": "quiz1Image18",
+        "question": "මාර්ගය මැද සඳහන් වූ සුදු රේඛාවක් මොනවා කියයිද?",
         "answers": [
-            { "text": "A road dividing line", "correct": false },
-            { "text": "Stop line at a stop signal", "correct": false },
-            { "text": "Give-way line marking", "correct": true },
-            { "text": "Pedestrian crossing", "correct": false }
+            { "text": "ඉස්මතු කිරීමට ඒක හෝ අවිධිගත කළ නොහැක", "correct": true },
+            { "text": "වක්‍රයක අවාසනාවක අවධානය පෙන්වයි", "correct": false },
+            { "text": "දකුණු පැත්තට වමන වර්ගකිරීමට අවසරය නැත", "correct": false },
+            { "text": "රේඛාව මාර්ග බෙදීමේ සලකුණයි", "correct": false }
         ]
     },
     {
-        "question": "What does a single white line marked in the middle of the road indicate?",
+        "question": "තොරතුරු මූලිකව, වාහන buffer එකේ යකඩ රැවුලක් තැබීමේ ප්‍රතිවිපාකය කුමක්ද?",
         "answers": [
-            { "text": "Cannot cross it for overtaking", "correct": true },
-            { "text": "Indicates danger at a bend", "correct": false },
-            { "text": "Not allowed to turn right", "correct": false },
-            { "text": "Road dividing line", "correct": false }
+            { "text": "Buffer එක ඉවත් කළ හැක", "correct": false },
+            { "text": "ඒවා නීතිවිරෝධි වේ", "correct": true },
+            { "text": "අනතුරක් වූ විට, වෙනත් පාර්ශවයට හානිය වැඩි වෙයි", "correct": false },
+            { "text": "මෙය රියදුරුගේ දෘෂ්ටිය අඩාල කරයි", "correct": false }
         ]
     },
     {
-        "question": "What is the consequence of placing an iron railing on the buffer?",
+        "question": "අවසානයේ, ඔබේ රියදුරු බලපත්‍රය සෑමවිටම අරගෙන යාමක් නීතිමය අවශ්‍යතාවක්ද?",
         "answers": [
-            { "text": "The buffer can be removed", "correct": false },
-            { "text": "It is not legal", "correct": true },
-            { "text": "During an accident, the damage will be higher for the other party", "correct": false },
-            { "text": "It affects the driver’s visibility", "correct": false }
+            { "text": "නීතිවිරෝධී නොවේ", "correct": false },
+            { "text": "නීතිවිරෝධී වේ", "correct": true },
+            { "text": "පහසුකමක් ලෙස පිටපතක් පමණක් පවා ගත හැක", "correct": false },
+            { "text": "එය නිවසේ තබා සිට, අවශ්‍යතා පවතින විට එය දක්වන්න සුදුසු වේ", "correct": false }
         ]
     },
     {
-        "question": "Is it legally required to always carry your driving license with you?",
+        "question": "ඔබට වාහනයක් වමට ඉස්මතු කිරීමට අවසර ලැබේ කුමන අවස්ථාවකද?",
         "answers": [
-            { "text": "Not legally mandated", "correct": false },
-            { "text": "Legally mandated", "correct": true },
-            { "text": "A photocopy is sufficient", "correct": false },
-            { "text": "It’s safe to keep it at home and produce it when necessary", "correct": false }
+            { "text": "වමට ඉස්මතු කිරීම තහනම්ය", "correct": false },
+            { "text": "ඉස්මතු වීමට ඉදිරියෙන් වාහනයක් වමට මරුසඵය ලෙස දක්වා ඇත", "correct": true },
+            { "text": "ඔබට වමට ඉස්මතු කිරීමට වාහනය අවශ්‍යයි", "correct": false },
+            { "text": "ඉහළ පිළිවෙලකට ඉස්මතු කිරීම සාමූහිකවයි", "correct": false }
         ]
     },
     {
-        "question": "When is it allowed to overtake a vehicle from the left side?",
+        "question": "සමතුලා මත වාහනය නැවැත්වීමේදී, ඔබට සැලකිල්ලෙන් පරීක්ෂා කළ යුතු විශේෂම දේ කුමක්ද?",
         "answers": [
-            { "text": "Overtaking from the left is prohibited", "correct": false },
-            { "text": "When the vehicle in front signals to turn right", "correct": true },
-            { "text": "When it is safe to overtake from the left", "correct": false },
-            { "text": "At any of the above situations", "correct": false }
+            { "text": "දොර තාප්ප අල්ලා තැබීම", "correct": false },
+            { "text": "පැදි පාලක පද්ධති සුදුසු ලෙස අයදුම් කරනවා කියා පරීක්ෂා කරන්න", "correct": true },
+            { "text": "දිනයේදී ද පාරාදී දී තාරා කේතපටි මතු පිලේ හරස් කරන්න", "correct": false },
+            { "text": "ඔබේ රථයේ ඉදිරියට නිවැරදිව හැරවීම සඳහා තොරතුරු පාලනය කිරීම", "correct": false }
         ]
     },
     {
-        "question": "What is the most important thing to check when parking on a level surface?",
+        "question": "නොදැක්කාක් වාහනයේ අනතුරක් සහිතව අමතර සංග්‍රහකවීමේදී ඔබ විසින් පියවර ගත යුතු දේ කුමක්ද?",
         "answers": [
-            { "text": "Lock the doors", "correct": false },
-            { "text": "Check if the parking brakes are properly applied", "correct": true },
-            { "text": "Turn on the lights even during the daytime", "correct": false },
-            { "text": "Ensure the front tires are facing the right direction while parking", "correct": false }
+            { "text": "නොමැකී ඇත", "correct": false },
+            { "text": "ඔබේ මාර්ගයේ අර්ථයේ පෙරවරු යොදා ගැනීම", "correct": false },
+            { "text": "එහි ගැටලුවාව හැසිරවීම වෙලාව", "correct": false },
+            { "text": "එම තබා ඇත, දුරුවාවද නතර කළත්", "correct": false }
         ]
     },
     {
-        "question": "When should hazard lamps be used?",
+        "question": "ඔබ විසින් නිධානයකට අවශ්‍ය වාහනසමච්චල වායු පද්ධතියේ පදනමයක් ගැනීම අවශ්‍ය",
         "answers": [
-            { "text": "When transporting a sick person", "correct": false },
-            { "text": "When driving ahead at a junction", "correct": false },
-            { "text": "When overtaking in a dangerous place", "correct": false },
-            { "text": "Only when the vehicle is broken down and stopped", "correct": true }
+            { "text": "අතිරේක වාසනාව පදනම්තියට", "correct": false }
+        ] 
+    },   
+    {
+        "question": "සමතුලා මත වාහනය නැවැත්වීමේදී, ඔබට සැලකිල්ලෙන් පරීක්ෂා කළ යුතු විශේෂම දේ කුමක්ද?",
+        "answers": [
+            { "text": "දොර තාප්ප අල්ලා තැබීම", "correct": false },
+            { "text": "පැදි පාලක පද්ධති සුදුසු ලෙස අයදුම් කරනවා කියා පරීක්ෂා කරන්න", "correct": true },
+            { "text": "දිනයේදී ද පාරාදී දී තාරා කේතපටි මතු පිලේ හරස් කරන්න", "correct": false },
+            { "text": "ඔබේ රථයේ ඉදිරියට නිවැරදිව හැරවීම සඳහා තොරතුරු පාලනය කිරීම", "correct": false }
         ]
     },
     {
-        "question": "What should you do when pumping fuel into a vehicle?",
+        "question": "වාහනයකට ඉන්ධන පිරවීමේදී, ඔබට කළ යුතුයි:",
         "answers": [
-            { "text": "There is no need to pay attention to the engine", "correct": false },
-            { "text": "The engine should be on while pumping fuel", "correct": false },
-            { "text": "The engine should be turned off while pumping fuel", "correct": true },
-            { "text": "You should check the oil level", "correct": false }
+            { "text": "ඇන්ජිනයේ අවධානය යොමු කිරීමට අවශ්‍ය නැත", "correct": false },
+            { "text": "ඇන්ජිනය ක්‍රියාත්මක වූ විට ඉන්ධන පිරවීම", "correct": false },
+            { "text": "ඇන්ජිනය නිවා දැමීම, ඉන්ධන පිරවීමේදී", "correct": true },
+            { "text": "තෙල් මට්ටම පරීක්ෂා කිරීම", "correct": false }
         ]
     },
     {
-        "question": "If you are driving in rainy conditions, what should you do?",
+        "question": "නව වාහන ලියාපදිංචි කිරීමේ ක්‍රියාවලිය අනුව නිකුත් කරන ලද හඳුනාගැනීමේ සහතිකය:",
         "answers": [
-            { "text": "If the tires are in good condition, there’s no need to worry", "correct": false },
-            { "text": "Drive slowly in a low gear", "correct": true },
-            { "text": "Drive fast in a high gear", "correct": false },
-            { "text": "Drive slowly in a high gear", "correct": false }
-        ]
-    },    
-    {
-        "question": "When parking on a flat surface, the most important thing to do is:",
-        "answers": [
-            { "text": "Lock the doors", "correct": false },
-            { "text": "Check if the parking brake is properly applied", "correct": true },
-            { "text": "Turn on the lights, even during the day", "correct": false },
-            { "text": "Ensure the front tires face the correct direction while parking", "correct": false }
+            { "text": "හඳුනාගැනීමේ සහතිකය වෙත අවධානය යොමු කිරීමට අවශ්‍ය නැත", "correct": false },
+            { "text": "එය සෑම විටම වාහනයේ ඇතුළත තබා ගත යුතුය", "correct": true },
+            { "text": "එය නිවසේ ආරක්ෂිතව තබා ගත යුතුය", "correct": false },
+            { "text": "එය වාහන හිමිකරුගේ අයිතීන්හි පටවා තබා ගත යුතුය", "correct": false }
         ]
     },
     {
-        "question": "When pumping fuel into a vehicle, you should:",
+        "question": "වාහනයක් ඉස්මතු කිරීමේදී, හොඳම කරුණු මොනවාද?",
         "answers": [
-            { "text": "It is unnecessary to pay attention to the engine", "correct": false },
-            { "text": "Pump fuel while the engine is running", "correct": false },
-            { "text": "Turn off the engine while pumping fuel", "correct": true },
-            { "text": "Check the oil level", "correct": false }
+            { "text": "3වෙනි හෝ 4වෙනි ගියර් වැනි ඉහළ ගියර් භාවිතා කර බලය වැඩි කිරීම", "correct": false },
+            { "text": "3වෙනි හෝ 4වෙනි ගියර් වැනි ඉහළ ගියර් භාවිතා කර වේගය වැඩි කිරීම", "correct": true },
+            { "text": "1වෙනි හෝ 2වෙනි ගියර් වැනි පහළ ගියර් භාවිතා කර බලය වැඩි කිරීම", "correct": false },
+            { "text": "1වෙනි හෝ 2වෙනි ගියර් වැනි පහළ ගියර් භාවිතා කර වේගය වැඩි කිරීම", "correct": false }
         ]
     },
     {
-        "question": "The identity certificate issued under the new vehicle registration process should be:",
+        "question": "තුන්වන මාර්ගයක් සහිත පාරක පවතින විට, තුන්වන මාර්ගය භාවිතා කළ යුතුය:",
         "answers": [
-            { "text": "It is not necessary to pay attention to the identity certificate", "correct": false },
-            { "text": "It should be kept inside the vehicle at all times", "correct": true },
-            { "text": "It should be kept at home safely", "correct": false },
-            { "text": "It should be in the custody of the vehicle owner", "correct": false }
+            { "text": "දකුණු පැත්තට හැරීම", "correct": false },
+            { "text": "වේගය වැඩි කිරීම", "correct": false },
+            { "text": "අනෙක් වාහනයක් ඉස්මතු කිරීම", "correct": false },
+            { "text": "අනෙක් වාහනයක් ඉස්මතු කිරීම, දකුණු පැත්තට හැරීම හෝ අනතුරක් වලක්වා ගැනීම", "correct": true }
         ]
     },
     {
-        "question": "When overtaking a vehicle, it is best to:",
+        "question": "ප්‍රධාන මාර්ගයකට ඇතුළු වන විට, ඔබ ඉඩ දිය යුත්තේ:",
         "answers": [
-            { "text": "Increase power by using a higher gear such as 3rd or 4th", "correct": false },
-            { "text": "Increase speed by using a higher gear such as 3rd or 4th", "correct": true },
-            { "text": "Increase power by using a lower gear such as 1st or 2nd", "correct": false },
-            { "text": "Increase speed by using a lower gear such as 1st or 2nd", "correct": false }
+            { "text": "වමේ සිට වාහන තදබදය", "correct": false },
+            { "text": "දකුණේ සිට ගමනාගමනය", "correct": false },
+            { "text": "දකුණෙන් සහ වමෙන් යන දෙඅංශයෙන්ම රථවාහන තදබදය", "correct": true },
+            { "text": "එන ගමනාගමනය", "correct": false }
         ]
     },
     {
-        "question": "In a road with three lanes, the third lane should be used for:",
+        "question": "ඔබට ඉදිරියෙන් යන වාහනයක් ඉස්සර කිරීමට අවශ්‍ය නම්, ඔබ කළ යුත්තේ:",
         "answers": [
-            { "text": "Turning right", "correct": false },
-            { "text": "Speeding up", "correct": false },
-            { "text": "Overtaking another vehicle", "correct": false },
-            { "text": "Overtaking another vehicle, turning right, or avoiding an accident", "correct": true }
+            { "text": "වාහනයේ රියදුරු ඉස්සර කිරීමට සංඥා කළහොත්, ඔබ ඒ ගැන සලකා බැලිය යුතු නැත.", "correct": false },
+            { "text": "ඉදිරියෙන් ඇති මාර්ගය පැහැදිලිව පෙනෙනවාද යන්න නිරීක්ෂණය කරන්න.", "correct": false },
+            { "text": "මාර්ගය ප්‍රමාණවත් තරම් පළල් දැයි නිරීක්ෂණය කරන්න.", "correct": false },
+            { "text": "මාර්ගය හොඳින් නිරීක්ෂණය කර, පසුව ඉස්සර කරනවාද නැද්ද යන්න තීරණය කරන්න.", "correct": true }
         ]
     },
     {
-        "question": "When entering a main road, you should give way to:",
+        "question": "හරස් මාර්ගයකින් ප්‍රධාන මාර්ගයට ළඟා වන විට, ඔබ කළ යුත්තේ:",
         "answers": [
-            { "text": "Traffic from the left", "correct": false },
-            { "text": "Traffic from the right", "correct": false },
-            { "text": "Traffic from both the right and left", "correct": true },
-            { "text": "Oncoming traffic", "correct": false }
+            { "text": "වාහන තදබදයක් නොමැති නම්, වමෙන් එක්වන්න.", "correct": false },
+            { "text": "වාහන නොමැති නම් දකුණු පැත්ත පරීක්ෂා කර ඇතුළු වන්න.", "correct": false },
+            { "text": "වම් පැත්ත පරීක්ෂා කර වාහන නොමැති නම් ඇතුළු වන්න.", "correct": false },
+            { "text": "දෙපස නිරීක්ෂණය කර ආරක්ෂිත වූ විට ප්‍රධාන මාර්ගයට ඇතුළු වන්න.", "correct": true }
         ]
     },
     {
-        "question": "If you want to overtake the vehicle in front of you, you should:",
+        "question": "රථවාහන නීති පිළිපැදීමේදී, නිවැරදි ප්‍රමුඛතා අනුපිළිවෙල වන්නේ:",
         "answers": [
-            { "text": "If the driver in the vehicle signals to overtake, you don’t need to consider it", "correct": false },
-            { "text": "Observe if the road ahead is clearly visible", "correct": false },
-            { "text": "Observe if the road is wide enough", "correct": false },
-            { "text": "Observe the road well and then decide whether to overtake", "correct": true }
+            { "text": "පොලිස් නිලධාරීන් විසින් නිකුත් කරන සංඥා, රථවාහන ආලෝක සංඥා, මාර්ග සංඥා සහ මාර්ග සලකුණු", "correct": true },
+            { "text": "මාර්ග සලකුණු, පොලිස් නිලධාරීන්ගේ සංඥා, රථවාහන ආලෝක සංඥා සහ මාර්ග සංඥා", "correct": false },
+            { "text": "මාර්ග සංඥා, මාර්ග සලකුණු, පොලිස් නිලධාරීන්ගේ සංඥා සහ රථවාහන ආලෝක සංඥා", "correct": false },
+            { "text": "රථවාහන ආලෝක සංඥා, මාර්ග සංඥා, මාර්ග සලකුණු සහ පොලිස් නිලධාරීන් විසින් නිකුත් කරන සංඥා", "correct": false }
         ]
     },
     {
-        "question": "When approaching the main road from a crossroad, you should:",
+        "question": "ඔබේ හෙඩ් ලයිට් දැල්වීමෙන් ඇඟවෙන්නේ:",
         "answers": [
-            { "text": "If there is no traffic, join from the left", "correct": false },
-            { "text": "Check the right side and enter if there are no vehicles", "correct": false },
-            { "text": "Check the left side and enter if there are no vehicles", "correct": false },
-            { "text": "Observe both sides and enter the main road when safe", "correct": true }
-        ]
-    },
-    {
-        "question": "When adhering to traffic rules, the correct order of priority is:",
-        "answers": [
-            { "text": "Signals by police officers, traffic light signals, road signs, and road markings", "correct": true },
-            { "text": "Road markings, signals by police officers, traffic light signals, and road signs", "correct": false },
-            { "text": "Road signs, road markings, signals by police officers, and traffic light signals", "correct": false },
-            { "text": "Traffic light signals, road signs, road markings, and signals by police officers", "correct": false }
-        ]
-    },
-    {
-        "question": "Flashing your headlights indicates:",
-        "answers": [
-            { "text": "Others should stop for me", "correct": false },
-            { "text": "I am ahead", "correct": true },
-            { "text": "Priority should be given to me", "correct": false },
-            { "text": "I am overtaking a slow-moving vehicle", "correct": false }
+            { "text": "අනිත් අය මා වෙනුවෙන් නතර විය යුතුයි.", "correct": false },
+            { "text": "මම ඉදිරියෙන් සිටිමි", "correct": true },
+            { "text": "ප්‍රමුඛතාවය මට දිය යුතුයි.", "correct": false },
+            { "text": "මම සෙමින් ගමන් කරන වාහනයක් පසුකර යනවා.", "correct": false }
         ]
     },    
 ]

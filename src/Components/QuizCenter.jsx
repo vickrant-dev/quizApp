@@ -73,10 +73,10 @@ export default function App() {
                         <button>English</button>
                     </div>
                     <div onClick={() => navigate('/quizCenter-tm')} className="tamil">
-                        <button>தமிழ்</button>
+                        <button><strong>தமிழ்</strong></button>
                     </div>
                     <div onClick={() => navigate('/quizCenter-sm')}  className="sinhala">
-                        <button>සිංහල</button>
+                        <button><strong>සිංහල</strong></button>
                     </div>
                 </div>
 
