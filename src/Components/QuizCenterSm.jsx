@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useEffect, useRef, useState  } from 'react'
 import '../Styles/QuizCenter.css'
 import { quizPapersm as quizPaper } from '../utils/sinhala/quizChoicesm';
 import { Timer, NotebookPen, Brain, ChevronRight, Languages } from 'lucide-react'
