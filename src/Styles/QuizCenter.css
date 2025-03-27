@@ -289,6 +289,9 @@
     .language-chooser.mobile .main-chooser div{
         margin-bottom: 0.5rem;
     }
+    .language-chooser.mobile .main-chooser div:last-child{
+        margin-bottom: 0rem;
+    }
 }
 
 @media (max-width: 565px) {
