@@ -8,6 +8,20 @@ export default function QuizCenterTm() {
     const navigate = useNavigate();
 
     const [active, setActive] = useState(false);
+    const chooserRef = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if(chooserRef.current && !chooserRef.current.contains(event.target)){
+                setActive(false);
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [chooserRef]);
 
     const handleClick = (quizLink) => {
         navigate(`/quizCenter-tm/quiz/tm/${quizLink}`);
@@ -86,6 +100,7 @@ export default function QuizCenterTm() {
                         <Languages size={32} />
                     </div>
                     <div className="main-chooser"
+                        ref={chooserRef}
                         style={{opacity: active ? '100' : '0', transition: 'all 150ms 0s ease-in-out', transform: active ? 'translateY(-10px)' : 'translateY(0px)' }}
                     >
                         <div className="english" onClick={() => navigate('/quizCenter')}>
