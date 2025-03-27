@@ -1,13 +1,28 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import '../Styles/QuizCenter.css'
 import { quizPaper } from '../utils/quizChoice';
 import { Timer, NotebookPen, Brain, ChevronRight, Languages } from 'lucide-react'
 import { useNavigate } from 'react-router-dom';
+import OutsideClickHandler from 'react-outside-click-handler';
 
 export default function App() {
     const navigate = useNavigate();
 
     const [active, setActive] = useState(false);
+    const chooserRef = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if(chooserRef.current && !chooserRef.current.contains(event.target)){
+                setActive(false);
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [chooserRef]);
 
     const handleClick = (quizLink) => {
         navigate(`/quizCenter/quiz/${quizLink}`);
@@ -84,10 +99,11 @@ export default function App() {
 
                 <div className="language-chooser mobile">
                     <div className="chooser-btn" onClick={() => setActive(!active)} >
-                        <Languages size={32} />
+                        <Languages  size={32} />
                     </div>
                     <div className="main-chooser"
-                        style={{opacity: active ? '100' : '0', transition: 'all 150ms 0s ease-in-out', transform: active ? 'translateY(-10px)' : 'translateY(0px)' }}
+                        ref={chooserRef}
+                        style={{opacity: active ? '100' : '0', transition: 'all 150ms 0s ease-in-out', transform: active ? 'translateY(-10px)' : 'translateY(0px)'}}
                     >
                         <div className="english checked">
                             <button>English</button>
