@@ -80,10 +80,15 @@ export default function QuizTm() {
     }
 
     const handleSubmit = () => {
-        setIsSubmitted(true);
-        localStorage.setItem("quizCompleted", "true");
-        localStorage.setItem("quizScore", score);
-        navigate(`/quizCenter-sm/quiz/sm/${quizLink}/results`, {replace: true});
+        if(usersAnswers[currentQuestion] !== undefined){
+            setIsSubmitted(true);
+            localStorage.setItem("quizCompleted", "true");
+            localStorage.setItem("quizScore", score);
+            navigate(`/quizCenter/quiz/${quizLink}/results`, {replace: true});
+        }
+        else{
+            alert("Please answer the current question before proceeding.");
+        }
     }
 
     const handleTimeUp = () => {

@@ -156,7 +156,7 @@ export const quiz4Datatm = [
     },
     {
         "question": "வரைபடத்தில் (a) புள்ளியில் உள்ளபடி சந்திப்பை நோக்கி ஒரு வாகனத்தை திருப்பும்போது, நீங்கள் என்ன செய்ய வேண்டும்?",
-        "src": "quiz1Image18",
+        "src": quiz1Image18,
         "answers": [
             { "text": "வாகனத்தை நிறுத்தவும்", "correct": false },
             { "text": "உங்கள் நோக்கத்தை சிக்னல் செய்யவும்", "correct": false },
@@ -166,7 +166,7 @@ export const quiz4Datatm = [
     },
     {
         "question": "வரைபடத்தில் (b) புள்ளியில் உள்ளபடி சந்திப்பை நோக்கி ஒரு வாகனத்தை திருப்பும்போது, நீங்கள் என்ன செய்ய வேண்டும்?",
-        "src": "quiz1Image18",
+        "src": quiz1Image18,
         "answers": [
             { "text": "ஹார்ன் அடிக்கவும்", "correct": false },
             { "text": "பக்க கண்ணாடிகள் மூலம் கவனிக்கவும்", "correct": false },
@@ -176,7 +176,7 @@ export const quiz4Datatm = [
     },
     {
         "question": "வரைபடத்தில் (c) புள்ளியில் உள்ளபடி சந்திப்பை நோக்கி ஒரு வாகனத்தை திருப்பும்போது, நீங்கள் என்ன செய்ய வேண்டும்?",
-        "src": "quiz1Image18",
+        "src": quiz1Image18,
         "answers": [
             { "text": "ஹார்ன் அடிக்கவும்", "correct": false },
             { "text": "பக்க கண்ணாடிகள் மூலம் கவனிக்கவும்", "correct": false },
@@ -186,7 +186,7 @@ export const quiz4Datatm = [
     },
     {
         "question": "வரைபடத்தின் படி, A இல் உள்ள உடைந்த கோடு எதைக் குறிக்கிறது?",
-        "src": "quiz1Image18",
+        "src": quiz1Image18,
         "answers": [
             { "text": "முன்னால் ஒரு சந்திப்பு", "correct": false },
             { "text": "கடக்க முடியாத ஒரு நீளமான கோடு", "correct": false },
@@ -196,7 +196,7 @@ export const quiz4Datatm = [
     },
     {
         "question": "வரைபடத்தின் படி, B இல் உள்ள உடைந்த கோடு எதைக் குறிக்கிறது?",
-        "src": "quiz1Image18",
+        "src": quiz1Image18,
         "answers": [
             { "text": "சாலை பிரிக்கும் கோடு", "correct": false },
             { "text": "நிறுத்த சிக்னலில் நிறுத்த கோடு", "correct": false },

@@ -227,7 +227,7 @@ export const quiz2Datasm = [
     },
     {
         "question": "මෙම මාර්ග සංඥාව දක්වන්නේ:",
-        "src": "quiz1Image21",
+        "src": quiz1Image21,
         "answers": [
             { "text": "මට්ටම් මාරුව ඉදිරියට", "correct": false },
             { "text": "රෝහල ඉදිරියට", "correct": false },
@@ -237,7 +237,7 @@ export const quiz2Datasm = [
     },
     {
         "question": "මෙම මාර්ග සංඥාව අනතුරු ඇඟවීම කරන්නේ:",
-        "src": "quiz1Image22",
+        "src": quiz1Image22,
         "answers": [
             { "text": "දකුණට හැරවිය යුතුයි", "correct": false },
             { "text": "වමේ වක්රය ඉදිරියට", "correct": true },
@@ -247,7 +247,7 @@ export const quiz2Datasm = [
     },
     {
         "question": "මෙම මාර්ග සංඥාව දක්වන්නේ:",
-        "src": "quiz1Image23",
+        "src": quiz1Image23,
         "answers": [
             { "text": "අසේදින දිනවල නවත්වීම තහනම්", "correct": false },
             { "text": "මාර්ගය වසා ඇත", "correct": false },
@@ -257,7 +257,7 @@ export const quiz2Datasm = [
     },
     {
         "question": "මෙම මාර්ග සංඥාව දැක්වන්නේ:",
-        "src": "quiz1Image24",
+        "src": quiz1Image24,
         "answers": [
             { "text": "අක්සල් එකකට බර සීමාව", "correct": false },
             { "text": "වේග සීමාව අවසන්", "correct": true },
@@ -267,7 +267,7 @@ export const quiz2Datasm = [
     },
     {
         "question": "මෙම මාර්ග සංඥාව දක්වන්නේ:",
-        "src": "quiz1Image25",
+        "src": quiz1Image25,
         "answers": [
             { "text": "දකුණු හැරවීම ඉදිරියට", "correct": true },
             { "text": "වාහන නවත්වන සුලු ස්ථානයක්", "correct": false },

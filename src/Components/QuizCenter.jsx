@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import '../Styles/QuizCenter.css'
 import { quizPaper } from '../utils/quizChoice';
-import { Timer, NotebookPen, Brain, ChevronRight } from 'lucide-react'
+import { Timer, NotebookPen, Brain, ChevronRight, Languages } from 'lucide-react'
 import { useNavigate } from 'react-router-dom';
 
 export default function App() {
     const navigate = useNavigate();
+
+    const [active, setActive] = useState(false);
 
     const handleClick = (quizLink) => {
         navigate(`/quizCenter/quiz/${quizLink}`);
@@ -77,6 +79,25 @@ export default function App() {
                     </div>
                     <div onClick={() => navigate('/quizCenter-sm')}  className="sinhala">
                         <button><strong>සිංහල</strong></button>
+                    </div>
+                </div>
+
+                <div className="language-chooser mobile">
+                    <div className="chooser-btn" onClick={() => setActive(!active)} >
+                        <Languages size={32} />
+                    </div>
+                    <div className="main-chooser"
+                        style={{opacity: active ? '100' : '0', transition: 'all 150ms 0s ease-in-out', transform: active ? 'translateY(-10px)' : 'translateY(0px)' }}
+                    >
+                        <div className="english checked">
+                            <button>English</button>
+                        </div>
+                        <div onClick={() => navigate('/quizCenter-tm')} className="tamil">
+                            <button><strong>தமிழ்</strong></button>
+                        </div>
+                        <div onClick={() => navigate('/quizCenter-sm')}  className="sinhala">
+                            <button><strong>සිංහල</strong></button>
+                        </div>
                     </div>
                 </div>
 

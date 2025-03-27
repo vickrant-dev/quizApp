@@ -156,7 +156,7 @@ export const quiz4Datasm = [
     },
     {
         "question": "ලේඛනය අනුව, A හි කපා මග රේඛාව කුමක් දැක්වීමක්ද?",
-        "src": {quiz1Image18},
+        "src": quiz1Image18,
         "answers": [
             { "text": "ඉදිරියට මාර්ග සංයෝගයක්", "correct": false },
             { "text": "අවිධිගත කළ නොහැකි දිගු රේඛාවක්", "correct": false },
@@ -166,7 +166,7 @@ export const quiz4Datasm = [
     },
     {
         "question": "ලේඛනය අනුව, B හි කපා මග රේඛාව කුමක් දැක්වීමක්ද?",
-        "src": {quiz1Image18},
+        "src": quiz1Image18,
         "answers": [
             { "text": "මාර්ග බෙදන රේඛාව", "correct": false },
             { "text": "නවතින සලකුණේ වැටුප් රේඛාව", "correct": false },

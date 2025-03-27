@@ -156,7 +156,7 @@ export const quiz4Data = [
     },
     {
         "question": "When turning a vehicle towards a junction according to the diagram at point (a), what should you do?",
-        "src": "quiz1Image18",
+        "src": quiz1Image18,
         "answers": [
             { "text": "Stop the vehicle", "correct": false },
             { "text": "Signal your intention", "correct": false },
@@ -166,7 +166,7 @@ export const quiz4Data = [
     },
     {
         "question": "When turning a vehicle towards a junction according to the diagram at point (b), what should you do?",
-        "src": "quiz1Image18",
+        "src": quiz1Image18,
         "answers": [
             { "text": "Honk your horn", "correct": false },
             { "text": "Observe through the side mirrors", "correct": false },
@@ -176,7 +176,7 @@ export const quiz4Data = [
     },
     {
         "question": "When turning a vehicle towards a junction according to the diagram at point (c), what should you do?",
-        "src": "quiz1Image18",
+        "src": quiz1Image18,
         "answers": [
             { "text": "Honk your horn", "correct": false },
             { "text": "Observe through the side mirrors", "correct": false },
@@ -186,7 +186,7 @@ export const quiz4Data = [
     },    
     {
         "question": "According to the diagram, what does the broken line at A depict?",
-        "src": "quiz1Image18",
+        "src": quiz1Image18,
         "answers": [
             { "text": "A junction ahead", "correct": false },
             { "text": "A longitudinal line that cannot be crossed", "correct": false },
@@ -196,7 +196,7 @@ export const quiz4Data = [
     },
     {
         "question": "According to the diagram, what does the broken line at B depict?",
-        "src": "quiz1Image18",
+        "src": quiz1Image18,
         "answers": [
             { "text": "A road dividing line", "correct": false },
             { "text": "Stop line at a stop signal", "correct": false },
