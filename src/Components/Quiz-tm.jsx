@@ -176,6 +176,7 @@ export default function QuizTm() {
                             </div>
                         </div>
                         <div className="back-next">
+                            <p><span>{currentQuestion + 1} of {quizData.length} கேள்விகள்</span></p>
                             <button onClick={handleBack} className={ currentQuestion > 0 ? "back-btn active" : "back-btn" } >{currentQuestion > 0 ? "Back" : ""}</button>
                             <button onClick={currentQuestion === quizData.length - 1 ? handleSubmit : handleNext} className='next-btn' >{currentQuestion === quizData.length - 1 ? "Submit" : "Next"}</button>
                         </div>

@@ -99,7 +99,7 @@ export default function App() {
 
                 <div className="language-chooser mobile">
                     <div className="chooser-btn" onClick={() => setActive(!active)} >
-                        <Languages  size={32} />
+                        Languages
                     </div>
                     <div className="main-chooser"
                         ref={chooserRef}
